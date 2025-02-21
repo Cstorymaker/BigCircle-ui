@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap");
+
+/* html{
+  font-size:62.5%;
+} */
+/* SP専用 */
+.u-mobile {
+  display: block; /* SP時に表示 */
+}
+
+@media (min-width: 767px) {
+  .u-mobile {
+    display: none; /* PC時に非表示 */
+  }
+}
+
+/* PC専用 */
+.u-desktop {
+  display: none; /* SP時に非表示 */
+}
+
+@media (min-width: 767px) {
+  .u-desktop {
+    display: block; /* PC時に表示 */
+    margin: 0 auto; /* 中央揃え */
+  }
+}
+
+/* header */
+.header {
+  height: 60px;
+  position: fixed;
+  z-index: 900;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #f0f0f0;
+}
+
+@media screen and (min-width:767px) {
+  .header {
+    height: 97px;
+  }
+}
+
+/* footer */
+.footer {
+  height: 362px;
+}
+
+@media screen and (min-width:767px) {
+  .footer {
+    height: 618px;
+  }
+}
+
+@media screen and (min-width:767px) {
+
+}
+
+/* MV */
+.mv {
+  margin-top: 60px;
+  background-image: url(../images/staff-interview-mv-sp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; /* 画像の見切れを調整 */
+  min-height: 320px;
+  overflow-x:clip;
+}
+
+@media screen and (min-width:767px) {
+  .mv{
+    margin-top: 97px;
+    background-image: url(../images/staff-interview-mv-pc.jpg);
+    background-position: center right; /* 画像の見切れを調整 */
+    height: 400px;
+    min-height: unset;
+
+    /* background-size: contain; */
+}
+}
+
+.mv-title--en{
+  font-family: "Lato", serif;
+  line-height:1.2 ;
+}
+
+.mv-title--jp{
+  font-family:  "Shippori Mincho", serif;
+  font-size: 1.75rem;
+  line-height:1.2 ;
+}
+@media (max-width: 374px) {
+  .mv-title--jp{
+  font-size: clamp(20px, 5vw, 28px); /* 375pxより小さいとき縮小 */
+  }
+}
+@media (min-width: 767px) {
+  .mv-title--jp{
+    font-size:2.75rem;
+  }
+}
+
+/* 赤色の背景 */
+.mv__red-bg {
+  position: absolute;
+  top: -18%; /* 位置調整 */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140%;
+  max-width: 1100px;
+  height: auto;
+  min-height: 307px;
+  background-color: red;
+  clip-path: ellipse(47% 60% at center top);
+}
+
+@media (min-width: 767px) { /* PCのとき */
+  .mv__red-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#D61F36;
+    clip-path: ellipse(97% 141% at left center);
+  }
+}
+
+/*自己紹介（interview）カード*/
+.interview-card__text{
+  font-family: 'Inter', sans-serif;
+}
+
+.interview-card__msg{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.375rem;
+  line-height: 1.7;
+}
+
+.interview__top-message{
+  line-height: 1.7;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.interview__name{
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.7;
+}
+
+.interview__name-en{
+  font-family: 'Inter', sans-serif;
+}
+
+/*recruit*/
+.recruit__img{
+  aspect-ratio:335/160 ;
+}
+@media (min-width: 767px) { 
+.recruit__img{
+  aspect-ratio:530/220;
+  }
+}
+
+.recruit__img-title{
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.5;
+}
+
+/*リクルートセクションのボタン*/
+.recruit__img::before{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 200%);
+  z-index: 10;
+}
+
+.recruit__circle-container {
+  position: absolute;
+  width:31.42px;
+  height:31.42px
+}
+@media (min-width: 767px) { 
+  .recruit__circle-container{
+    width:48px;
+    height:42.67px
+    }
+  }
+
+.recruit__btn-circle {
+  width:31.42px;
+  height:31.42px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  clip-path: inset(0 0 9% 0); 
+  transform: rotate(12deg); 
+}
+@media (min-width: 767px) { 
+  .recruit__btn-circle{
+    width:35.35px;
+    height:35.35px;
+    }
+  }
+
+.recruit__btn-arrow{
+  position: absolute;
+  top: 50%;
+  left: -11px;
+  width: 28.6px;
+  height: 1px;
+  background-color:#FFFFFF;
+}
+@media (min-width: 767px) { 
+  .recruit__btn-arrow{
+    width: 32.17px;
+    left: -13px;
+    }
+  }
+
+.recruit__btn-arrow::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  background: #FFFFFF;
+  height: 0.0625rem;
+  right: 0;
+  transform: rotate(43deg);
+  transition: all 0.3s;
+  width:6px;
+}
+
+
+
+
