@@ -1,8 +1,32 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho:wght@400;500&family=Zen+Kaku+Gothic+New&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Noto+Sans+JP:wght@100..900&family=Shippori+Mincho:wght@400;500;600;700&display=swap");
 /* html{
   font-size:62.5%;
 } */
+
+/*header*/
+.header {
+  height: 71px;
+  position: fixed;
+  z-index: 900;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #d8f3ff;
+}
+
+@media screen and (min-width: 767px) {
+  .header {
+    height: 97px;
+  }
+}
+
+/* footer */
+.footer {
+  height: 150px;
+  background-color: #d8f3ff;
+}
+
 /* SP専用 */
 .u-mobile {
   display: block; /* SP時に表示 */
@@ -26,79 +50,44 @@
   }
 }
 
-/* header */
-.header {
-  height: 60px;
-  position: fixed;
-  z-index: 900;
-  top: 0;
-  right: 0;
-  left: 0;
-  background-color: #f0f0f0;
-}
-
-@media screen and (min-width:767px) {
-  .header {
-    height: 97px;
-  }
-}
-
-/* footer */
-.footer {
-  height: 362px;
-}
-
-@media screen and (min-width:767px) {
-  .footer {
-    height: 618px;
-  }
-}
-
-@media screen and (min-width:767px) {
-
-}
-
 /* MV */
 .mv {
-  margin-top: 60px;
-  background-image: url(../images/staff-interview-mv-sp.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; /* 画像の見切れを調整 */
+  background-position: center center;
   min-height: 320px;
-  overflow-x:clip;
+  overflow-x: clip;
+  margin-top: 71px;
+  z-index: 2;
 }
 
-@media screen and (min-width:767px) {
-  .mv{
-    margin-top: 97px;
-    background-image: url(../images/staff-interview-mv-pc.jpg);
-    background-position: center right; /* 画像の見切れを調整 */
+@media screen and (min-width: 767px) {
+  .mv {
+    background-position: center right;
     height: 400px;
     min-height: unset;
-
-    /* background-size: contain; */
+    margin-top: 97px;
+  }
 }
-}
 
-.mv-title--en{
+.mv-title--en {
   font-family: "Lato", serif;
-  line-height:1.2 ;
+  line-height: 1.2;
 }
 
-.mv-title--jp{
-  font-family:  "Shippori Mincho", serif;
+.mv-title--jp {
+  font-family: "Shippori Mincho", serif;
   font-size: 1.75rem;
-  line-height:1.2 ;
+  line-height: 1.2;
 }
 @media (max-width: 374px) {
-  .mv-title--jp{
-  font-size: clamp(20px, 5vw, 28px); /* 375pxより小さいとき縮小 */
+  .mv-title--jp {
+    font-size: clamp(20px, 5vw, 28px); /* 375pxより小さいとき縮小 */
   }
 }
 @media (min-width: 767px) {
-  .mv-title--jp{
-    font-size:2.75rem;
+  .mv-title--jp {
+    font-size: clamp(28px, 2vw + 16px, 44px);
   }
 }
 
@@ -116,124 +105,1247 @@
   clip-path: ellipse(47% 60% at center top);
 }
 
-@media (min-width: 767px) { /* PCのとき */
+@media (min-width: 767px) {
+  /* PCのとき */
   .mv__red-bg {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color:#D61F36;
+    background-color: #d61f36;
     clip-path: ellipse(97% 141% at left center);
   }
 }
 
-/*自己紹介（interview）カード*/
-.interview-card__text{
-  font-family: 'Inter', sans-serif;
+/*staff-listページ*/
+.layout-staff-list {
+  background-image: url(../ui/img/recruit/staff-list/staff-interview-mv-sp.jpg);
 }
-
-.interview-card__msg{
-  font-family: 'Noto Sans JP', sans-serif;
-  font-size: 1.375rem;
-  line-height: 1.7;
-}
-
-.interview__top-message{
-  line-height: 1.7;
-  font-family: 'Noto Sans JP', sans-serif;
-}
-
-.interview__name{
-  font-family: 'Noto Sans JP', sans-serif;
-  line-height: 1.7;
-}
-
-.interview__name-en{
-  font-family: 'Inter', sans-serif;
-}
-
-/*recruit*/
-.recruit__img{
-  aspect-ratio:335/160 ;
-}
-@media (min-width: 767px) { 
-.recruit__img{
-  aspect-ratio:530/220;
+@media screen and (min-width: 767px) {
+  .layout-staff-list {
+    background-image: url(../ui/img/recruit/staff-list/staff-interview-mv-sp.jpg);
   }
 }
 
-.recruit__img-title{
-  font-family: 'Noto Sans JP', sans-serif;
+/*自己紹介（interview）カード*/
+.interview-card__text {
+  font-family: "Inter", sans-serif;
+}
+
+.interview-card__msg {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+.interview__top-message {
+  line-height: 1.7;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.interview__name {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+.interview__name-en {
+  font-family: "Inter", sans-serif;
+}
+
+/*recruit*/
+.recruit__img {
+  aspect-ratio: 335/160;
+}
+@media (min-width: 767px) {
+  .recruit__img {
+    aspect-ratio: 530/220;
+  }
+}
+
+.recruit__img-title {
+  font-family: "Noto Sans JP", sans-serif;
   line-height: 1.5;
 }
 
 /*リクルートセクションのボタン*/
-.recruit__img::before{
+.recruit__img::before {
   position: absolute;
   content: "";
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 200%);
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 200%
+  );
   z-index: 10;
 }
 
 .recruit__circle-container {
   position: absolute;
-  width:31.42px;
-  height:31.42px
+  width: 31.42px;
+  height: 31.42px;
 }
-@media (min-width: 767px) { 
-  .recruit__circle-container{
-    width:48px;
-    height:42.67px
-    }
+@media (min-width: 767px) {
+  .recruit__circle-container {
+    width: 48px;
+    height: 42.67px;
   }
+}
 
 .recruit__btn-circle {
-  width:31.42px;
-  height:31.42px;
-  border: 1px solid #FFFFFF;
+  width: 31.42px;
+  height: 31.42px;
+  border: 1px solid #ffffff;
   border-radius: 50%;
-  clip-path: inset(0 0 9% 0); 
-  transform: rotate(12deg); 
+  clip-path: inset(0 0 9% 0);
+  transform: rotate(12deg);
 }
-@media (min-width: 767px) { 
-  .recruit__btn-circle{
-    width:35.35px;
-    height:35.35px;
-    }
+@media (min-width: 767px) {
+  .recruit__btn-circle {
+    width: 35.35px;
+    height: 35.35px;
   }
+}
 
-.recruit__btn-arrow{
+.recruit__btn-arrow {
   position: absolute;
   top: 50%;
   left: -11px;
   width: 28.6px;
   height: 1px;
-  background-color:#FFFFFF;
+  background-color: #ffffff;
 }
-@media (min-width: 767px) { 
-  .recruit__btn-arrow{
+@media (min-width: 767px) {
+  .recruit__btn-arrow {
     width: 32.17px;
     left: -13px;
-    }
   }
+}
 
 .recruit__btn-arrow::after {
   content: "";
   position: absolute;
   top: -2px;
-  background: #FFFFFF;
+  background: #ffffff;
   height: 0.0625rem;
   right: 0;
   transform: rotate(43deg);
   transition: all 0.3s;
-  width:6px;
+  width: 6px;
 }
 
+/*staff-detailsページ*/
+.staff-details {
+  background-size: contain;
+  background-color: #d61f36;
+  aspect-ratio: 375/548;
+  background-repeat: no-repeat;
+  margin-top: 71px;
+  position: relative; 
+}
+@media screen and (min-width: 767px) {
+  .staff-details {
+    aspect-ratio: 1440/500;
+    margin-top: 97px;
+  }
+}
+
+.layout-staff-details-01 {
+  background-image: url(../ui/img/recruit/staff-details-01/staff-details-r.t-SP.png);
+}
+@media screen and (min-width: 767px) {
+  .layout-staff-details-01 {
+    background-image: url(../ui/img/recruit/staff-details-01/staff-details-r.t-pc.png);
+  }
+}
+
+.staff-details__image {
+  aspect-ratio: 1440/500;
+}
+
+.staff-details__interview-number {
+  font-family: "Inter", sans-serif;
+  line-height: 1.58;
+}
+
+.staff-details__catch-copy {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.5;
+}
+
+.staff-details__name {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.5;
+}
+
+.staff-details__name span {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+/*faqセクション*/
+.staff-details__faq-image img {
+  aspect-ratio: 335/400;
+}
+
+@media screen and (min-width: 767px) {
+  .staff-details__faq-image img {
+    aspect-ratio: 500/700;
+  }
+}
+
+.qa-items__question {
+  font-family: "Noto Sans JP", sans-serif;
+  text-indent: -26px;
+  line-height: 1.7;
+}
+@media screen and (min-width: 767px) {
+  .qa-items__question {
+    text-indent: -30px;
+  }
+}
+
+.qa-items__question::before {
+  content: "Q";
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  margin-right: 8px;
+}
+@media screen and (min-width: 767px) {
+  .qa-items__question::before {
+    font-size: 28px;
+  }
+}
+
+.qa-items__answer {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+.staff-details__faq-container + .staff-details__faq-container {
+  margin-top: 40px;
+}
+@media screen and (min-width: 767px) {
+  .staff-details__faq-container + .staff-details__faq-container {
+    margin-top: 60px;
+  }
+}
+
+/*セクションタイトル*/
+.section-title__en-title {
+  font-family: "Inter", sans-serif;
+  line-height: 1.2;
+}
+
+.section-title__jp-title {
+  font-family: "Shippori Mincho", serif;
+  line-height: 1.2;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90.8px;
+  height: 18.5px;
+  z-index: 0;
+}
+
+.section-title::before {
+  top: -31px;
+  background-image: url("../ui/img/recruit/common/red-vector-top.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.section-title::after {
+  bottom: -27px;
+  background-image: url("../ui/img/recruit/common/red-vector-bottom.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 767px) {
+}
+
+/* タイムスケジュール（SP） */
+/* 疑似要素 線 */
+.sp-schedule__item::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 20px;
+  width: 1px;
+  height: 108%;
+  background: #d61f36;
+}
+
+/* 疑似要素 丸 */
+.sp-schedule__item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #d61f36;
+}
+
+.sp-schedule__term {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+}
+
+.sp-schedule__title {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+.sp-schedule__text {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+/* PC表示 */
+.staff-details__schedule-pc {
+  display: none;
+}
+@media screen and (min-width: 767px) {
+  .staff-details__schedule-pc {
+    display: block;
+  }
+}
+
+/*タイムスケジュール（PC）*/
+@media screen and (min-width: 767px) {
+  .pc-schedule__term {
+    font-family: "Inter", sans-serif;
+    line-height: 1;
+    width: 9%;
+  }
+
+  .pc-schedule__description {
+    padding-bottom: 30px;
+    padding-left: 29px;
+    width: 90%;
+    position: relative;
+  }
+
+  .pc-schedule__description::before,
+  .pc-schedule__description::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+  }
+
+  .pc-schedule__description::before {
+    left: 2px;
+    width: 1px;
+    height: 100%;
+    background: #d61f36;
+  }
+
+  .pc-schedule__description::after {
+    left: -3px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #d61f36;
+  }
+
+  .pc-schedule__title {
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.5;
+  }
+
+  .pc-schedule__text {
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+  }
+}
+
+/* 社員TOPに戻るボタン */
+.return-button__text {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  transition: opacity 0.3s ease;
+}
+
+.return-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+  line-height: 1;
+}
+/* アイコン部分 (丸と矢印) */
+.return-button__icon {
+  position: relative;
+  width: 30px;
+  height: 26.88px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+}
+
+/* 赤い丸 */
+.return-button__circle {
+  width: 19.68px;
+  height: 19.68px;
+  border: 1px solid #d61f36;
+  border-radius: 50%;
+  clip-path: inset(0 0 5% 0);
+  transform: rotate(-9deg);
+}
+
+/* 矢印 */
+.return-button__arrow {
+  position: absolute;
+  top: 53%;
+  right: 3px;
+  width: 17.87px;
+  height: 1px;
+  background: #d61f36;
+}
+
+.return-button__arrow::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  background: #d61f36;
+  height: 1px;
+  left: 0;
+  transform: rotate(-43deg);
+  width: 3.95px;
+}
+
+.return-button:hover .return-button__text {
+  opacity: 0.6; /* テキストの色を薄くする */
+}
+
+/*benefit-of-workページ*/
+.layout-benefit-of-working {
+  background-image: url(../ui/img/recruit/benefits-of-working/benefit-of-working-mv-sp.jpg);
+}
+@media screen and (min-width: 767px) {
+  .layout-benefit-of-working {
+    background-image: url(../ui/img/recruit/benefits-of-working/benefit-of-working-mv-pc.jpg);
+  }
+}
+
+.benefits-02__career-title {
+  font-family: "Shippori Mincho", serif;
+  line-height: 1.7;
+}
+
+.benefits-02__career-purpose {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+.benefits-02__schedule-title {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+.benefits-02__schedule-title span {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
+}
+
+.benefits-02__career-item::before {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 20px;
+  width: 1px;
+  height: 116%;
+  background: #d61f36;
+}
+
+.benefits-02__career-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #d61f36;
+}
+
+/* 最後の要素には縦線を消す */
+.benefits-02__career-item:last-child::before {
+  height: 0;
+}
+
+.benefits-02__image img {
+  aspect-ratio: 163.5/98.1;
+}
+@media screen and (min-width: 767px) {
+  .benefits-02__image img {
+    aspect-ratio: 240/144;
+  }
+}
+
+.benefits-02__image-caption {
+  display: none;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+@media screen and (min-width: 767px) {
+  .benefits-02__image-caption {
+    display: block;
+  }
+}
+
+.benefits-02__image-caption-sp {
+  display: block;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+@media screen and (min-width: 767px) {
+  .benefits-02__image-caption-sp {
+    display: none;
+  }
+}
+
+/* ベネフィット1つ目 */
+.benefits-01__top-text {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+  position: relative;
+  z-index: 10;
+}
+
+.benefits-01__point-title {
+  font-family: "Shippori Mincho", serif;
+  line-height: 1.7;
+}
+
+.benefits-01__point-description {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+.benefits-02__top-text {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+/* ベネフィット2つ目 */
+.benefits-02__qualification-section {
+  /* padding: 20px; */
+  background-color: #f3f3f3;
+}
+
+.benefits-02__qualification-title {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+.benefits-02__subtitle {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+.benefits-02__qualification-list li {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+/* 赤いドットアイコン */
+.benefits-02__career-sub-title {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+.benefits-02__qualification-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  transform: translateY(-50%);
+  background-color: #d61f36;
+}
+
+.benefits-02__career-sub-text {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+.benefits-02__career-sub-title::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 50%;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  display: inline-block;
+  transform: translateY(-50%);
+  background-color: #d61f36;
+}
+@media screen and (min-width: 767px) {
+  .benefits-02__career-sub-title::before {
+    left: 0;
+  }
+}
+.benefits-02__2nd-image img {
+  aspect-ratio: 163.5/98.1;
+}
+@media screen and (min-width: 767px) {
+  .benefits-02__2nd-image img {
+    aspect-ratio: 276/165;
+  }
+}
+
+/* ベネフィット3つ目 */
+.benefits-03__sub-title {
+  font-family: "Shippori Mincho", serif;
+  line-height: 1.7;
+}
+
+.benefits-03__text {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+.benefits-03__table-heading {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+.benefits-03__box-title,
+.benefits-03__box-text {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+/*シフト制の表*/
+table,
+th,
+td {
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.benefits-03__table-container {
+  width: 100%;
+  max-width: 490px;
+  overflow-x: auto;
+}
+
+.time-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #a89d9d;
+}
+
+.time-table tr {
+  border-bottom: 1px solid #a89d9d;
+  position: relative;
+  z-index: 20;
+}
+
+.time-table th {
+  padding: 3.61px 0 4.82px 0;
+  line-height: 1;
+  text-align: center;
+}
+@media screen and (min-width: 767px) {
+  .time-table th {
+    padding: 6px 0 8px 0;
+  }
+}
+
+.time-table td {
+  padding: 4px 7px;
+  line-height: 1;
+  text-align: center;
+  font-size: 9px;
+  color: #d61f36;
+}
+@media screen and (min-width: 767px) {
+  .time-table td {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+
+.time-table th {
+  font-family: "Shippori Mincho", serif;
+  font-size: 9.03px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  background-color: #aaa7a7;
+  color: #ffffff;
+}
+@media screen and (min-width: 767px) {
+  .time-table th {
+    font-size: 15px;
+  }
+}
+
+.time-table th span {
+  font-size: 6.62px;
+  line-height: 1.201;
+}
+@media screen and (min-width: 767px) {
+  .time-table th span {
+    font-size: 11px;
+  }
+}
+
+.time-table .time-table__detail {
+  font-family: "Shippori Mincho", serif;
+  font-size: 8.43px;
+  line-height: 1.199;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  color: #2e2829;
+  white-space: nowrap;
+}
+@media screen and (min-width: 767px) {
+  .time-table .time-table__detail {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+}
+
+.time-table__detail {
+  font-family: "Shippori Mincho", serif;
+  font-size: 9.24px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #2e2829;
+}
+
+/* 「休」マークのセル */
+.time-table__rest {
+  position: relative;
+  vertical-align: middle;
+  padding: 0;
+  overflow: visible;
+}
+
+.time-table__rest::before {
+  content: "";
+  position: absolute;
+  top: 49%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #a89d9d;
+  z-index: 0;
+}
+@media screen and (min-width: 767px) {
+  .time-table__rest::before {
+    top: 50%;
+  }
+}
+/* 縦長の「休」マーク */
+.rest-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14.82px;
+  height: 34.92px;
+  border: 0.6px solid #d61f36;
+  color: #d61f36;
+  border-radius: 50px;
+  font-size: 9.03px;
+  font-weight: 400;
+  line-height: 1.501;
+  font-family: "Shippori Mincho", serif;
+  white-space: nowrap;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+@media screen and (min-width: 767px) {
+  .rest-label {
+    border: 1px solid #d61f36;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 23px;
+    height: 58px;
+    letter-spacing: 0.06em;
+  }
+}
+
+.time-table__notice {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+/*ビジネスアワー制の表*/
+.benefits-03__business-container {
+  width: 100%;
+  max-width: 447px;
+  overflow-x: auto;
+}
+
+.business-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #a89d9d;
+}
+
+.business-table tr {
+  border-bottom: 1px solid #a89d9d;
+  position: relative;
+  z-index: 20;
+}
+
+.business-table th {
+  padding: 3.61px 0 4.82px 0;
+  line-height: 1;
+  text-align: center;
+}
+@media screen and (min-width: 767px) {
+  .business-table th {
+    padding: 6px 0 8px 0;
+  }
+}
+
+.business-table__cell {
+  font-family: "Shippori Mincho", serif;
+  font-size: 7.92px;
+  padding: 7.1px 7px;
+  line-height: 1;
+  text-align: center;
+  color: #d61f36;
+}
+@media screen and (min-width: 767px) {
+  .business-table__cell {
+    font-size: 12px;
+    padding: 13px 10px;
+  }
+}
+
+.business-table th {
+  font-family: "Shippori Mincho", serif;
+  font-size: 9.9px;
+  line-height: 1.2;
+  font-weight: 500;
+  white-space: nowrap;
+  background-color: #aaa7a7;
+  color: #ffffff;
+}
+@media screen and (min-width: 767px) {
+  .business-table th {
+    font-size: 15px;
+  }
+}
+
+.business-table .business-table__detail {
+  font-family: "Shippori Mincho", serif;
+  font-size: 9.24px;
+  line-height: 1.2;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  text-align: left;
+  white-space: nowrap;
+  color: #2e2829;
+}
+@media screen and (min-width: 767px) {
+  .business-table .business-table__detail {
+    font-size: 14px;
+    line-height: 1.2;
+    padding: 10px 0 10px 18px;
+  }
+}
+
+.time-table__notice {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+.benefits-03__message {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+/*ボタン*/
+.button__text {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+  letter-spacing: 0.08em;
+  transition: opacity 0.3s ease;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+  line-height: 1;
+}
+/* アイコン部分 (丸と矢印) */
+.button__icon {
+  position: relative;
+  width: 60px;
+  height: 53.76px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+@media screen and (min-width: 767px) {
+  .button__icon {
+    width: 91.48px;
+    height: 81.96px;
+    padding-left: 21px;
+  }
+}
+
+/* 赤い丸 */
+.button__circle {
+  width: 39.35px;
+  height: 39.35px;
+  border: 1px solid #d61f36;
+  border-radius: 50%;
+  clip-path: inset(0 0 5% 0);
+  transform: rotate(-9deg);
+}
+@media screen and (min-width: 767px) {
+  .button__circle {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* 矢印 */
+.button__arrow {
+  position: absolute;
+  top: 48%;
+  left: 1px;
+  width: 35.75px;
+  height: 1px;
+  background: #d61f36;
+}
+@media screen and (min-width: 767px) {
+  .button__arrow {
+    left: 0;
+    width: 58.5px;
+    top: 53%;
+  }
+}
+
+.button__arrow::after {
+  content: "";
+  position: absolute;
+  background: #d61f36;
+  height: 1px;
+  top: -2px;
+  right: 0;
+  transform: rotate(40deg);
+  width: 7px;
+}
+@media screen and (min-width: 767px) {
+  .button__arrow::after {
+    width: 9px;
+    top: -3px;
+  }
+}
+
+.button:hover .button__text {
+  opacity: 0.6; /* テキストの色を薄くする */
+}
+
+.layout-benefits-01 {
+  position: relative;
+}
+
+.layout-benefits-01::before {
+  background: url(../ui/img/recruit/benefits-of-working/benefit-of-working-bg2.png) no-repeat;
+  background-size: contain;
+  content: "";
+  width: 140px;
+  height: 152px;
+  left: -28px;
+  position: absolute;
+  top: -13%;
+  z-index: 1;
+}
+@media screen and (min-width: 767px) {
+  .layout-benefits-01::before {
+    width: 326px;
+    height: 352px;
+    left: 1px;
+    top: -38%;
+  }
+}
+
+.layout-benefits-02 {
+  position: relative;
+  overflow-x: clip;
+}
+
+.layout-benefits-02::before {
+  background: url(../ui/img/recruit/benefits-of-working/benefit-of-working-bg1.png) no-repeat;
+  background-size: contain;
+  content: "";
+  width: 274px;
+  height: 297px;
+  right: -143px;
+  position: absolute;
+  top: -18%;
+  z-index: 1;
+}
+@media screen and (min-width: 767px) {
+  .layout-benefits-02::before {
+    width: 552px;
+    height: 595.96px;
+    right: -250px;
+    top: -38%;
+  }
+}
+
+/*about-usページ*/
+.layout-about-us {
+  background-image: url(../ui/img/recruit/about-us/about-us-mv-sp.jpg);
+}
+@media screen and (min-width: 767px) {
+  .layout-about-us {
+    background-image: url(../ui/img/recruit/about-us/about-us-mv-pc.jpg);
+  }
+}
+
+.ceo-message__title {
+  font-family: "Shippori Mincho", serif;
+  line-height: 1.7;
+}
+
+.ceo-message__text {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 2.4; /*ピクパで調整*/
+}
+
+.ceo-message__name {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+.ceo-message__name span {
+  line-height: 1.5;
+}
+
+.ceo-message__image img {
+  aspect-ratio: 335/240;
+}
+@media screen and (min-width: 767px) {
+  .ceo-message__image img {
+    aspect-ratio: 418/520;
+  }
+}
+
+.our-mission__sub-title {
+  font-family: "Shippori Mincho", serif;
+  line-height: 1.7;
+}
+
+.our-mission__text {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+/*組織図*/
+.organization-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 親会社のレイアウト */
+.company-card__logo {
+  width: 29.11px;
+  height: 31.31px;
+}
+@media screen and (min-width: 767px) {
+  .company-card__logo {
+    width: 66px;
+    height: 71px;
+  }
+}
+
+.company-card__name {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.5;
+}
+
+.connector {
+  position: relative;
+  width: 100%;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 767px) {
+  .connector {
+    height: 97px;
+  }
+}
+
+.connector::before{
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 49%;
+  top: 51%;
+  right: 15.5%;
+  bottom: 0;
+  background-color: #d61f36; 
+}
+
+.connector::after{
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 49%;
+  top: 51%;
+  left: 15.5%;
+  bottom: 0;
+  background-color: #d61f36; 
+}
+
+
+/* 縦線 */
+.vertical-line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #d61f36;
+  top: 0;
+}
+
+/* 横線（子会社3つ分の幅） */
+.horizontal-line {
+  position: absolute;
+  width: 69%;
+  height: 1px;
+  background-color: #d61f36;
+  top: 51%;
+}
+
+/* 親と子をつなぐ縦線 + 横線 */
+.child-company-wrap{
+  max-width: 355px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  @media screen and (min-width: 767px) {
+    .child-company-wrap{
+      max-width: 805px;
+    }
+  }
+
+.child-company {
+  padding: 4.85px 6.62px 7.73px;
+  display: grid;
+  grid-template-rows: subgrid; 
+  grid-row: span 2; 
+  align-items: end; 
+  flex: 0 1 100%;
+}
+@media screen and (min-width: 767px) {
+  .child-company {
+    padding: 11px 7.73px 15px;
+    flex: 0 1 100%;
+  }
+}
+
+.child-name {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.5;
+}
+
+.business-type {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+  padding: 0.88px 8.82px;
+  margin: 0 auto; 
+  text-align: center; 
+}
+
+.organization__text {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+.organization__text span {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+}
+
+/* 大切にしている5つの行動指針  */
+.behavior__image {
+  width: calc(100% - -20px);
+
+}
+@media screen and (min-width: 767px) {
+  .behavior__image  {
+    width: 51%;
+  }
+}
+
+.behavior__image img {
+  aspect-ratio: 360/360;
+}
+@media screen and (min-width: 767px) {
+  .behavior__image img  {
+    aspect-ratio: 700/700;
+  }
+}
+
+.behavior__numbered-title {
+  font-family: "Shippori Mincho", serif;
+  line-height: 1.5;
+}
+
+.behavior__numbered-title span{
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+}
+
+.behavior__text {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+
+  padding-left:2.5em;
+}
+@media screen and (min-width: 767px) {
+  .behavior__text {
+    padding-left:3.5em;
+  }
+}
 
 
 
