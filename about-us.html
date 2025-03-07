@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ogp -->
+    <meta property="og:title" content="#" />
+    <meta property="og:type" content="#" />
+    <meta property="og:url" content="#" />
+    <meta property="og:image" content="OGP IMAGE 絶対パス" />
+    <meta property="og:site_name" content="#" />
+    <meta property="og:description" content="#" />
+    <!-- ファビコン -->
+    <link rel="icon" href="#" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Shippori+Mincho:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link href="./css/output.css" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
+    <!-- JavaScript -->
+    <title>丸大観光</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header js-header"></header>
+
+    <main>
+      <!-- MV -->
+      <div class="layout-about-us mv relative flex items-start md:items-center">
+        <div class="mv__red-bg"></div>
+        <div class="absolute "></div>
+        <div class="mv__inner md:w-full md:max-w-[1430px] md:pr-8 md:pl-8 md:mx-auto flex md:items-center h-full">
+          <!-- タイトル -->
+          <div class="z-15 absolute text-center w-full mt-7 md:translate-x-0  md:-mt-[29px] md:text-left ">
+            <p class="mv-title--en text-white tracking-[0.04em] font-medium text-sm md:text-xl uppercase">ABOUT</p>
+            <h2 class="mv-title--jp text-white tracking-[0.15em] font-normal mt-1">丸大について</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- 社長あいさつ -->
+      <section class="layout-ceo-message ceo-message mt-14 md:mt-[100px]">
+        <div class="mx-auto md:max-w-[1136px] px-5 md:px-[40px]">
+          <div class="flex flex-col md:flex-row-reverse gap-[21px] md:gap-[72px]">
+            <div class="flex flex-col justify-between gap-6 md:gap-[32px] w-full md:w-[54%]">
+              <h2 class="ceo-message__title text-[28px] md:text-4xl text-[#D61F36] font-normal tracking-[0.08em] md:tracking-[0.01em]">旅客運送事業を通じて、<br>社会に貢献する。</h2>
+              <p class="ceo-message__text text-base text-[#2E2829] font-normal tracking-[0.1em]">当社は、1923年〜長年、バス・タクシーの旅客運送事業を行なっていますが、
+                「社会に必要とされない会社に明日はない」との信念の下、常に社会に貢献できる事業を選択し、行なってきました。<br>
+                その結果、創業100年を迎えることができたものと考えています。<br>
+                現在、超高齢化・2024問題等により極度のドライバー不足時代が到来していますが、そのような社会情勢の変化の中でも、いかに社会に貢献していくかを検討することで、これからも社会から必要とされる企業であり続けます。</p>
+                <p class="ceo-message__name text-sm text-[#2E2829] font-normal tracking-[0.01em]">代表取締役<span class="text-xl ml-2">齋藤 栄作</span></p>
+            </div>
+            <div class="ceo-message__image w-full md:w-[40%] flex-shrink-0">
+              <picture>
+                <source srcset="/ui/img/recruit/about-us/about-us-ceo-sp.jpg" media="(max-width: 767px)">
+                <img src="/ui/img/recruit/about-us/about-us-ceo-pc.jpg" alt="CEO" class="object-cover w-full ">
+            </picture>
+            </div>
+          </div>
+        </div>
+        </section>
+
+        <!-- 私たちの指名 -->
+       <section class="layout-mission our-mission">
+        <div class="flex justify-center mx-auto md:max-w-[900px] px-5 md:px-[40px] mt-[106.5px] md:mt-[146.5px]">
+          <div class="section-title relative inline-block text-center ">
+            <p class="section-title__en-title text-base uppercase tracking-[0.08em] font-medium text-[#D61F36] relative z-10">about</p>
+            <h2 class="section-title__jp-title mt-1 text-2xl md:text-4xl font-normal tracking-[0.015em] text-[#000000] relative z-10">私たちの使命</h2>
+          </div>
+        </div>
+        <div class="mx-auto md:max-w-[1136px] px-5 md:px-[40px]">
+          <p class="our-mission__sub-title text-xl md:text-2xl text-[#D61F36] font-normal tracking-[0.06em] text-center mt-[52.5px] md:mt-[68.5px]">助けが必要な方に“足助け”を。</p>
+          <div class="mt-6 md:mt-5 text-center">
+            <p class="our-mission__text text-base text-[#2E2829] font-normal tracking-[0.08em]">
+              ただの“移動手段”を超えた“足助け”として地域に寄り添い、人々の生活を支える。<br>
+              それが私たちの使命です。<br>ご自身の力だけでは、学校に通うことが出来ない生徒様の教育の機会を守る、<br>
+              特別支援学校スクールバス事業。<br>お身体が不自由なため、毎週の通院が難しい地域のお客様を病院までお届けする<br>
+              タクシー事業。<br>長距離のご移動が不安な方でも、安心して大切なイベントを楽しむことが出来る、トイレ付観光バスの運行。</p>
+            <p class="our-mission__text text-base text-[#2E2829] font-normal tracking-[0.08em] mt-6">
+              “足助け”とは、一人ひとりの当たり前の暮らしを支えるための私たちの想い。<br>移動に困難を感じるすべての方に寄り添い、誰もが自分らしく暮らせる社会を<br>
+              目指し、これからも挑戦し続けます。</p>
+          </div>
+        </div>
+        <div class="mt-[17px] md:mt-[-252px]">
+          <img src="/ui/img/recruit/about-us/about-us-bg.png" alt="丸大のバスが３台並んでいる様子">
+        </div>
+        </section>
+
+        <!-- 組織図 -->
+        <section class="mt-[90.5px] md:mt-[106.5px]">
+          <div class="mx-auto md:max-w-[1280px] w-full px-[10px] md:px-[40px]">
+            <div class="flex justify-center ">
+              <div class="section-title relative inline-block text-center ">
+                <p class="section-title__en-title text-base uppercase tracking-[0.08em] font-medium text-[#D61F36] relative z-10">organization</p>
+                <h2 class="section-title__jp-title mt-1 text-2xl md:text-4xl font-normal tracking-[0.15em] text-[#000000] relative z-10">組織図</h2>
+              </div>
+            </div>
+
+            <div class="organization-chart mt-[68.5px] md:mt-[92.5px]">
+              <!-- 親会社 -->
+              <div class="border border-[#D61F36] py-[8.82px] px-[6.42px] md:py-5 md:px-[17px] flex justify-center items-center">
+                  <div class="company-card flex items-center gap-[7.23px] md:gap-4">
+                      <img src="/ui/img/recruit/about-us/organization-logo.png" alt="株式会社ビックサークルグループホールディングスのロゴ" class="company-card__logo object-cover w-full">
+                      <p class="company-card__name text-xs md:text-[28px] font-normal tracking-[0.08em] text-[#2E2829]">株式会社ビックサークルグループホールディングス</p>
+                  </div>
+              </div>
+          
+              <!-- 親会社から子会社へ伸びる線 -->
+               <div class="child-company-wrap">
+                <div class="connector">
+                  <div class="vertical-line"></div>
+                  <div class="horizontal-line"></div>
+              </div>
+              <!-- 子会社リスト -->
+              <div class="organization-children-wrap flex md:gap-5 gap-[8.82px] w-full ">
+                  <div class="child-company relative bg-[#D61F36] text-[#FFFFFF] text-center flex flex-col items-center gap-[4.41px] md:gap-[10px]">
+                      <p class="child-name text-[9px] md:text-xl font-normal tracking-[0.08em] text-[#FFFFFF]">丸大観光<br>株式会社</p>
+                      <p class="business-type  md:w-[108px] md:text-base text-[7px] font-normal tracking-[0.08em] text-[#D61F36] bg-[#FFFFFF] ">バス事業</p>
+                  </div>
+                  <div class="child-company  bg-[#D61F36] text-[#FFFFFF] text-center flex flex-col items-center gap-[4.41px] md:gap-[10px]">
+                      <p class="child-name text-[9px] md:text-xl font-normal tracking-[0.08em] text-[#FFFFFF]">豊岡丸大タクシー<br>株式会社</p>
+                      <p class="business-type md:w-[143px] md:text-base text-[7px] font-normal tracking-[0.08em] text-[#D61F36] bg-[#FFFFFF] ">タクシー事業</p>
+                  </div>
+                  <div class="child-company relative bg-[#D61F36] text-[#FFFFFF] text-center flex flex-col items-center gap-[4.41px] md:gap-[10px]">
+                      <p class="child-name text-[9px] md:text-xl font-normal tracking-[0.08em] text-[#FFFFFF]">丸大トラベルサービス<br>株式会社</p>
+                      <p class="business-type  md:w-[108px] md:text-base text-[7px] font-normal tracking-[0.08em] text-[#D61F36] bg-[#FFFFFF] ">旅行事業</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <p class="organization__text text-center text-base md:text-lg font-normal tracking-[0.08em] text-[#2E2829] mt-5 md:mt-10 ">グループ総従業員数&nbsp;約<span class="text-[32px] md:text-[44px] text-[#D61F36]">550</span>名</p>
+        </section>
+
+        <!-- 大切にしている5つの行動指針 -->
+       <section class="layout-behavior behavior">
+        <div class="flex justify-center mx-auto md:max-w-[900px] px-5 md:px-[40px] mt-[106.5px] md:mt-[126.5px]">
+          <div class="section-title relative inline-block text-center ">
+            <p class="section-title__en-title text-base uppercase tracking-[0.08em] font-medium text-[#D61F36] relative z-10">behavioral guidelines</p>
+            <h2 class="section-title__jp-title mt-1 text-2xl md:text-4xl font-normal tracking-[0.015em] text-[#000000] relative z-10">大切にしている<br class="u-mobile">5つの行動指針</h2>
+          </div>
+        </div>
+        <div class="behavior__container mx-auto md:max-w-[1459px] px-5 md:px-[30.5px] mt-[76.5px] md:mt-[92.5px] flex items-center flex-col-reverse md:flex-row">
+            <div class="behavior__image md:w-[51%] flex-shrink-0 mt-7 md:mt-0">
+              <img class="object-cover w-full" src="/ui/img/recruit/about-us/about-us-members.jpg "alt="従業員の集合写真" >
+            </div>
+              <div class="behavior__text-content md:pt-[30px] flex flex-col gap-7 md:gap-8 ">
+                <div class="behavior__text-item md:-ml-[3%]">
+                  <h3 class="behavior__numbered-title flex items-center gap-[7px] md:gap-[11.5px] text-xl md:text-[22px] tracking-[0.06em] font-normal text-[#D61F36]"><span class="text-[26px] md:text-[32px] font-normal tracking-[0.05em] inline-block">01</span>商品・サービスについて</h3>
+                  <ul class="behavior__text list-disc pl-5 text-base font-normal tracking-[0.08em] text-[#443B3C] mt-[6px]">
+                    <li class="list-none">安全な運行のために
+                      <ul class="list-none">
+                        <li>・法令・契約・ルールに沿い、やるべきことを当然に行います。</li>
+                        <li>・常に準備を整えて、運行に臨みます。</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="behavior__text-item md:ml-[1em]">
+                  <h3 class="behavior__numbered-title flex items-center gap-[7px] md:gap-[11.5px] text-xl md:text-[22px] tracking-[0.06em] font-normal text-[#D61F36]"><span class="text-[26px] md:text-[32px] font-normal tracking-[0.05em]">02</span>お客様について</h3>
+                  <p class="behavior__text text-base font-normal tracking-[0.08em] text-[#443B3C] mt-[6px]">
+                    移動に助けが必要なお客様(ご高齢者、お子様、障がいをお持ちの方等)の<br class="u-desktop">
+                    助けとなれるようそれぞれの特性を深く理解します。
+                  </p>
+                </div>
+
+                <div class="behavior__text-item md:ml-[2em]">
+                  <h3 class="behavior__numbered-title flex items-center gap-[7px] md:gap-[11.5px] text-xl md:text-[22px] tracking-[0.06em] font-normal text-[#D61F36]"><span class="text-[26px] md:text-[32px] font-normal tracking-[0.05em]">03</span>社員(仲間)に対して</h3>
+                  <p class="behavior__text text-base font-normal tracking-[0.08em] text-[#443B3C] mt-[6px]">自らよく考え、仲間とよくコミュニケーションをとります。</p>
+                </div>
+
+                <div class="behavior__text-item md:ml-[1em]">
+                  <h3 class="behavior__numbered-title flex items-center gap-[7px] md:gap-[11.5px] text-xl md:text-[22px] tracking-[0.06em] font-normal text-[#D61F36]"><span class="text-[26px] md:text-[32px] font-normal tracking-[0.05em]">04</span>会社について</h3>
+                  <p class="behavior__text text-base font-normal tracking-[0.08em] text-[#443B3C] mt-[6px]">会社の方針をよく理解し、常に技術と知識の研鑽に励みます。</p>
+                </div>
+
+                <div class="behavior__text-item md:-ml-[4%]">
+                  <h3 class="behavior__numbered-title flex items-center gap-[7px] md:gap-[11.5px] text-xl md:text-[22px] tracking-[0.06em] font-normal text-[#D61F36]"><span class="text-[26px] md:text-[32px] font-normal tracking-[0.05em]">05</span>地域・社会について</h3>
+                  <p class="behavior__text text-base font-normal tracking-[0.08em] text-[#443B3C] mt-[6px]">社会に貢献する仕事をしているとの誇りを持ち、業務を行います。</p>
+                </div>
+              </div>
+            </div>
+          </section>
+    <!-- リクルートセクション -->
+    <div class="recruit bg-[#F3F3F3] py-16 md:py-20 mt-20">
+      <div class="recruit__inner md:w-full md:max-w-[1430px] md:pr-8 md:pl-8 mx-auto px-[20px] flex md:items-center h-full">
+        <div class="flex flex-col gap-y-6 md:gap-x-10 md:flex-row justify-center mx-auto">
+          <a href="#" class="recruit__img block md:max-w-[530px] max-w-[500px] w-full h-full relative">
+            <img src="/ui/img/recruit/common/recruit-new-employee-img.jpg" alt="説明会に参加している新入社員" class="object-cover w-full h-full">
+            <p class="recruit__img-title absolute bottom-[8px] md:left-5 left-[12px] text-white tracking-[0.08em] text-xl md:text-2xl z-50">高卒・新卒 募集要項</p>
+            <div class="recruit__circle-container absolute bottom-[10px] right-[5%] md:right-[2%] z-30">
+              <div class="recruit__btn-circle"></div>
+              <div class="recruit__btn-arrow absolute"></div>
+            </div>
+          </a>
+          <a href="#" class="recruit__img block md:max-w-[530px] max-w-[500px] w-full h-full relative">
+            <img src="/ui/img/recruit/common/recruit-taxi-driver-img.jpg" alt="タクシーとタクシードライバー" class="object-cover w-full h-full">
+            <p class="recruit__img-title absolute bottom-[8px] md:left-5 left-[12px] text-white tracking-[0.08em] text-xl md:text-2xl z-50">中途採用 募集要項</p>
+            <div class="recruit__circle-container absolute bottom-[10px] right-[5%] md:right-[2%] z-30">
+              <div class="recruit__btn-circle"></div>
+              <div class="recruit__btn-arrow absolute"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer">footer</footer>
+  </body>
+</html>

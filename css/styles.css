@@ -124,7 +124,7 @@
 }
 @media screen and (min-width: 767px) {
   .layout-staff-list {
-    background-image: url(../ui/img/recruit/staff-list/staff-interview-mv-sp.jpg);
+    background-image: url(../ui/img/recruit/staff-list/staff-interview-mv-pc.png);
   }
 }
 
@@ -446,13 +446,16 @@
     top: 9px;
   }
 
-  .pc-schedule__description::before {
+  .history__list.schedule-pc > div:not(:last-child) .pc-schedule__description::before {
+    content: "";
+    position: absolute;
     left: 2px;
+    top:12px;
     width: 1px;
     height: 100%;
     background: #d61f36;
   }
-
+  
   .pc-schedule__description::after {
     left: -3px;
     width: 13px;
@@ -971,6 +974,8 @@ td {
   text-align: left;
   white-space: nowrap;
   color: #2e2829;
+  padding: 7.1px 0 7.1px 12.1px;
+
 }
 @media screen and (min-width: 767px) {
   .business-table .business-table__detail {
@@ -989,6 +994,17 @@ td {
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1.7;
 }
+
+/*カードの高さ調整*/
+.benefits-03__shift-box,
+.benefits-03__hour-box{
+  display: grid;
+  grid-row: span 3;
+  grid-template-rows: subgrid;
+  gap: 12px;
+}
+
+
 
 /*ボタン*/
 .button__text {
@@ -1347,5 +1363,279 @@ td {
   }
 }
 
+/***********************
+コーポレート
+**********************/
+.section-heading__en-top{
+  font-family: "Instrument Serif", serif;
+  line-height: 1.2;
+}
 
+.section-heading__bottom,
+.section-heading__jp{
+  font-family: "Shippori Mincho", serif;
+  line-height: 1.2;
+}
+
+/***********************
+プライバシーポリシー
+**********************/
+
+.privacy-policy__item p{
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+.privacy-policy__sub-heading{
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+.privacy-policy__list-item,
+.privacy-policy__box-item{
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+.privacy-policy__list-item{
+  text-indent: -1.5em;
+  padding-left:1.5em;
+}
+
+.privacy-policy__small-heading{
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+
+/***********************
+コーポレートのMV共通
+**********************/
+
+.cooperate-mv{
+  display: grid;
+  grid-template-columns: 1fr; 
+  grid-template-rows: 46.875% 53.125%;
+  width: 100%;
+  height: 320px; 
+  margin-top: 71px;
+}
+@media screen and (min-width: 767px) {
+  .cooperate-mv {
+    grid-template-columns: 62.5% 37.5%;
+    grid-template-rows: 1fr; /* PC時は高さを均等に */
+    height: 300px; 
+    margin-top: 97px;
+  }
+}
+
+.cooperate-title__en {
+  font-family: "Instrument Serif", serif;
+  line-height: 1.2;
+}
+
+.cooperate-title__jp {
+  font-family: "Shippori Mincho", serif;
+  line-height: 1.2;
+}
+
+/***********************
+スクールバス
+**********************/
+.layout-school-bus{
+  /* overflow-x: clip; */
+}
+
+.school-bus__mv-message {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+  margin-inline:auto;
+
+}
+
+.school-bus-message{
+  margin-inline:auto;
+  overflow-x:clip;
+}
+
+.school-bus-message::after{
+  position: absolute;
+  content: "";
+  background: url(../ui/img/cooperate/school-bus/school-bus-icon-sp.png) no-repeat;
+  background-size: contain;
+  width: 152.25px;
+  height: 245.98px;
+  right: 0;
+  top: 0;
+  z-index: 20;
+}
+@media screen and (min-width: 767px) {
+  .school-bus-message::after{
+  background: url(../ui/img/cooperate/school-bus/school-bus-icon-pc.png) no-repeat;
+  width: 363px;
+  height: 393px;
+  background-size: contain;
+  right: -2%;
+  top:-12%;
+  z-index: 20;
+  }
+}
+
+.school-bus-details__text{
+  font-family: "Noto Sans JP", sans-serif;
+  line-height:1.7;
+}
+
+.school-bus-details__image img{
+  aspect-ratio: 335/209.08;
+}
+@media screen and (min-width: 767px) {
+  .school-bus-details__image img{
+    aspect-ratio: 431/269;
+  }
+}
+
+.section-heading__jp-only{
+  font-family: "Shippori Mincho", serif;
+  line-height: 1.2;
+}
+
+.school-bus-details__image-map img{
+  aspect-ratio: 335/245.04;
+}
+@media screen and (min-width: 767px) {
+  .school-bus-details__image-map img{
+    aspect-ratio: 499/365;
+  }
+}
+
+/***********************
+スクールバスに尽力している理由流れるテキスト
+**********************/
+.reasons__scroll-list li {
+  font-family: "Instrument Serif", serif;
+  line-height: 1;
+  text-stroke: 1px #959595;
+  -webkit-text-stroke: 1px #959595;
+  animation: marquee-left 8s linear infinite;
+}
+
+.circle-logo{
+  display: inline-flex;
+  width: 60px;
+  margin: 0 0.3em; 
+}
+@media screen and (min-width: 767px) {
+  .circle-logo{
+    width: 120px;
+  }
+}
+
+.circle-logo img{
+  aspect-ratio: 60/64.5;
+  width: 100%;
+  object-fit: cover;
+}
+@media screen and (min-width: 767px) {
+  .circle-logo img{
+    aspect-ratio: 120/129;
+  }
+}
+
+/* アニメーション */
+@keyframes marquee-left {
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.reasons__text{
+  font-family: "Noto Sans JP", sans-serif;
+  line-height:1.7;
+}
+
+@media screen and (min-width: 767px) {
+  .layout-reasons::before{
+    position: absolute;
+    content: "";
+    background: url(../ui/img/cooperate/school-bus/school-bus-bus-img02.jpg) no-repeat;
+    background-size: contain;
+    width: 12.5%;
+    height:220px;
+    right:4.2%;
+    border-radius: 5px;
+    top: 19%;
+    z-index: 20;
+  }
+}
+
+@media screen and (min-width: 767px) {
+.layout-reasons::after{
+  position: absolute;
+  content: "";
+  background: url(../ui/img/cooperate/school-bus/school-bus-with-wheelchair.jpg) no-repeat;
+  background-size: contain;
+  width:14%;
+  height:240px;
+  left:4.2%;
+  border-radius: 5px;
+  top: 28%;
+  z-index: 20;
+}
+}
+.efforts__box-title,
+.efforts__box-text{
+  font-family: "Noto Sans JP", sans-serif;
+  line-height:1.7;
+}
+
+.efforts__left-box img,
+.efforts__right-box img{
+  aspect-ratio:335/201 ;
+}
+@media screen and (min-width: 767px) {
+.efforts__left-box img,
+.efforts__right-box img{
+  aspect-ratio:400/240;
+}
+}
+
+.reasons__sp-image img{
+  aspect-ratio:335/195.42;
+}
+
+@media screen and (min-width: 767px) {
+  .layout-efforts::after{
+    position: absolute;
+    content: "";
+    background: url(../ui/img/cooperate/school-bus/school-bus-bus-img01.jpg) no-repeat;
+    background-size: contain;
+    background-position: center left;
+    aspect-ratio: 12 / 7;
+    width: 16.5vw;
+    height: 140px;
+    right:0;
+    border-radius: 5px;
+    top: -23%;
+    z-index: 20;
+  }  
+}
+
+
+@media screen and (min-width: 767px) {
+  .layout-efforts::after{
+    position: absolute;
+    content: "";
+    background: url(../ui/img/cooperate/school-bus/school-bus-bus-img01.jpg) no-repeat;
+    background-size: contain;
+    background-position: center left;
+    aspect-ratio: 12 / 7;
+    width: 16.5vw;
+    height: 140px;
+    right:0;
+    border-radius: 5px;
+    top: -23%;
+    z-index: 20;
+  }  
+}
 
