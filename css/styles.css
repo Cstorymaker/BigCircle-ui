@@ -375,29 +375,35 @@
 @media screen and (min-width: 767px) {
 }
 
-/* タイムスケジュール（SP） */
-/* 疑似要素 線 */
-.sp-schedule__item::before {
+.sp-schedule__item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 25px; 
+}
+
+.sp-schedule__item:not(:last-child)::before {
   content: "";
   position: absolute;
-  left: 5px;
-  top: 20px;
+  left: 6px; 
+  top: 20px; 
+  height: calc(100% + 10px);
   width: 1px;
-  height: 108%;
   background: #d61f36;
 }
 
-/* 疑似要素 丸 */
+/* 丸のデザイン */
 .sp-schedule__item::after {
   content: "";
   position: absolute;
   left: 0;
-  top: 9px;
+  top: 9px; 
   width: 13px;
   height: 13px;
   border-radius: 50%;
   background: #d61f36;
 }
+
 
 .sp-schedule__term {
   font-family: "Inter", sans-serif;
@@ -908,6 +914,10 @@ td {
 .benefits-03__business-container {
   width: 100%;
   max-width: 447px;
+  overflow-x: auto;
+}
+
+.benefits-03__timetable-wrapper{
   overflow-x: auto;
 }
 
