@@ -1375,20 +1375,6 @@ td {
 }
 
 /***********************
-コーポレート
-**********************/
-.section-heading__en-top{
-  font-family: "Instrument Serif", serif;
-  line-height: 1.2;
-}
-
-.section-heading__bottom,
-.section-heading__jp{
-  font-family: "Shippori Mincho", serif;
-  line-height: 1.2;
-}
-
-/***********************
 プライバシーポリシー
 **********************/
 .layout-privacy-policy{
