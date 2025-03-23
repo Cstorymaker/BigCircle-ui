@@ -2011,3 +2011,568 @@
     background: white;
   }
   
+
+  
+
+/********************
+貸し切りバスページ
+*********************/
+.private-bus__reason-text {
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+  }
+  @media screen and (min-width: 768px) {
+    .private-bus__reason-text {
+      line-height: 1.5;
+    }
+  }
+  
+  .private-bus__text-title {
+    font-family: "Shippori Mincho", serif;
+    line-height: 1.5;
+  }
+  
+  
+  @media screen and (min-width: 768px) {
+    .private-bus__title-second{
+      text-indent:-3px;
+    }
+  }
+  
+  .private-bus__text-title--second {
+    display: block;
+  }
+  
+  .private-bus__announced-text {
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    .private-bus__announced-text{
+      padding-bottom: 14px;
+  
+    }
+  }
+  
+  .private-bus__text-title span {
+    font-family: "Instrument Serif", serif;
+    line-height: 1;
+  }
+  
+  .private-bus__text {
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    border-bottom: 1px solid black;
+    padding-bottom: 14px;
+  }
+  
+  .private-bus__text-top {
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+  }
+  
+  
+  /*横浜FCクラブバス運行のスライド*/
+  .reasons__image-area {
+    position: relative;
+    width: 100%;
+  }
+  
+  .reasons__slider-wrapper {
+    display: flex;
+  }
+  
+  .reasons__slide {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  
+  .reasons__slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    aspect-ratio: 335/240;
+  }
+  @media screen and (min-width: 768px) {
+    .reasons__slide img {
+      aspect-ratio: 400/280;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .private-bus__reason-conten {
+      flex-direction: column;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .private-bus__text-area,
+    .section-heading  {
+      max-width: 650px;
+      width: 100%;
+      margin-inline: auto;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .reasons__image-area{
+      max-width: 650px;
+      width: 100%;
+      margin-inline: auto;
+      margin-top: 24px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .reasons__image-area{
+      max-width: 650px;
+      width: 100%;
+      margin-inline: auto;
+      margin-top: 24px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .private-bus__security-image{
+      max-width:400px;
+      width: 100%;
+      margin-inline: auto;
+      margin-top: 24px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .private-bus__text{
+      margin-top: 24px;
+    }
+  }
+  
+  /* ページネーション（ドット） */
+  .reasons__pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .reasons__pagination{
+      margin-top: 10px;
+    }
+  }
+  @media screen and (min-width: 1025px)  {
+    .reasons__pagination{
+      margin-top: 0;
+    }
+  }
+  
+  
+  @media screen and (min-width: 768px) and (max-width: 1024px)  {
+    .reasons__conten{
+      flex-direction: column;
+    }
+  }
+  
+  
+  
+  .reasons__bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #D2C7C7; 
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .reasons__bullet--active {
+    background-color: #D61F36; 
+  }
+  
+  
+  .section-heading__sm-title {
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+  }
+  
+  .private-bus__security-image {
+    margin-inline: auto;
+  }
+  
+  .private-bus__image-area img {
+    aspect-ratio: 335/240;
+  }
+  @media screen and (min-width: 768px) {
+    .private-bus__image-area img {
+      aspect-ratio: 400/280;
+    }
+  }
+  
+  .private-bus__security-image img {
+    aspect-ratio: 240/198.12;
+  }
+  @media screen and (min-width: 768px) {
+    .private-bus__security-image img {
+      aspect-ratio: 288/237.74;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .private-bus__text-title {
+      text-indent: -80px;
+      padding-left: 80px;
+    }
+  }
+  
+  /*貸し切りバス一覧のスライド*/
+  .vehicle-swiper__wrapper {
+    padding-bottom: 10px;
+    padding-left: 2px;
+    display: flex;
+  }
+  
+  .vehicle-swiper {
+    position: relative;
+  }
+  
+  .vehicle-swiper .vehicle-swiper img {
+    width: 100%;
+    aspect-ratio: 400/498;
+    object-fit: cover;
+  }
+  
+  .vehicle-slide {
+    cursor: pointer;
+    padding: 16px;
+    height: auto;
+    background-color: #f8f7f7;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .vehicle-slide {
+      padding: 40px;
+    }
+  }
+  
+  .vehicle-slide__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .vehicle-slide__image img {
+    aspect-ratio: 280 / 180;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 5px;
+  }
+  @media screen and (min-width: 768px) {
+    .vehicle-slide__image img {
+      aspect-ratio: 320 / 200;
+    }
+  }
+  
+  .vehicle-slide__body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .vehicle-slide__title {
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+  }
+  @media screen and (min-width: 768px) {
+    .vehicle-slide__title {
+      line-height: 1.5;
+    }
+  }
+  
+  .vehicle-slide__text {
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+    flex-grow: 1;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .vehicle-swiper__contents {
+      padding: 0 22.222%;
+    }
+  }
+  
+  /*ボタンのデフォルトを打ち消し*/
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: static !important;
+    top: auto !important;
+    margin-top: 0 !important;
+  }
+  
+  .swiper-button-prev:after,
+  .swiper-rtl .swiper-button-next:after {
+    content: "";
+  }
+  
+  .vehicle-slide__swiper-navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 60%;
+    height: 40px;
+    margin-inline: auto;
+  }
+  @media screen and (min-width: 768px) {
+    .vehicle-slide__swiper-navigation {
+      padding-left: 0;
+      margin-inline: auto;
+      margin-top: 28px;
+    }
+  }
+  
+  .vehicle-slide__custom-prev,
+  .vehicle-slide__custom-next {
+    width: 40px !important;
+    height: 40px !important;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  /* 左ボタン */
+  .vehicle-slide__custom-prev {
+    background-image: url("../ui/img/cooperate/common/arrow-before.png");
+  }
+  
+  /* 右ボタン */
+  .vehicle-slide__custom-next {
+    background-image: url("../ui/img/cooperate/common/arrow-next.png");
+  }
+  
+  .vehicle-slide__swiper-line {
+    flex-grow: 1; 
+    height: 1px;
+    background-color: #524c4c;
+  }
+  
+  /* SP時は線を非表示 */
+  @media screen and (max-width: 767px) {
+    .vehicle-slide__swiper-line {
+      display: none;
+    }
+  }
+  
+  /**********
+  モーダル
+  **********/
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .modalBg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(18, 2, 4, 0.5);
+  }
+  
+  .modalContents {
+    position: relative;
+    display: flex;
+    height: inherit;
+    z-index: 6000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modalTitle {
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.5;
+  }
+  
+  .modalText {
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.7;
+  }
+  
+  .modalWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 5px;
+    z-index: 6000;
+    padding: 60px 12.5px 80px 12.5px;
+  }
+  @media screen and (min-width: 768px) {
+    .modalWrapper {
+      width: 85%;
+      padding: 60px 240px 80px 240px;
+      height: auto;
+    }
+  }
+  
+  .modal__img img {
+    object-fit: contain;
+  }
+  @media screen and (min-width: 768px) {
+    .modal__img img {
+      aspect-ratio: 420/300;
+    }
+  }
+  
+  .closeModal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .closeModal::before,
+  .closeModal::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: #d61f36;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  
+  .closeModal::before {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  
+  .closeModal::after {
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  
+  .modal__modal-title {
+    font-size: 24px;
+    line-height: 1.75;
+    font-weight: 600; /* $semi-bold */
+    font-family: "Noto Sans", sans-serif; /* $noto-sans-font */
+    color: #4c4b49;
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .modal__modal-title {
+      font-size: 50px;
+      line-height: 1.75;
+    }
+  }
+  
+  .modal__details {
+    margin-top: 26px;
+    text-align: left;
+    max-width: 700px;
+    width: 100%;
+    margin-inline: auto;
+  }
+  @media screen and (min-width: 768px) {
+    .modal__details {
+      margin-top: 32px;
+    }
+  }
+  
+  .modal__details li {
+    font-size: 16px;
+    line-height: 1.99;
+    font-weight: 600; /* $semi-bold */
+    font-family: "Noto Sans", sans-serif; /* $noto-sans-font */
+    color: #4c4b49;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .modal__details li {
+      font-size: 33px;
+      line-height: 2;
+    }
+  }
+  
+  /* 背景スクロールを無効化 */
+  .no-scroll {
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  /* ボタン全体のラップ */
+  .vehicle-slide__button-wrap {
+    gap: 8px; /* 矢印とテキストの間隔 */
+    transition: color 0.3s ease;
+    margin-inline: auto;
+  }
+  
+  .vehicle-slide {
+    border-top: 1px solid #959595;
+    border-bottom: 1px solid #959595;
+    border-left: 1px solid #959595;
+  }
+  
+  /* 矢印ボタン */
+  .vehicle-slide__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #d61f36;
+    border-radius: 50%;
+    position: relative;
+    transition: all 0.3s ease;
+    margin-top: 0; /* 矢印の位置調整 */
+  }
+  
+  /* 横線 */
+  .vehicle-slide__button::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 1px;
+    background-color: #d61f36;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* 斜め線 */
+  .vehicle-slide__button::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 3.7px;
+    right: 8px;
+    background-color: #d61f36;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    transform-origin: right center;
+  }
+  
+  /* ホバー時 */
+  .vehicle-slide__button-wrap:hover .vehicle-slide__button {
+    background: #d61f36;
+  }
+  
+  .vehicle-slide__button-wrap:hover .vehicle-slide__button::before,
+  .vehicle-slide__button-wrap:hover .vehicle-slide__button::after {
+    background: white;
+  }
+  
