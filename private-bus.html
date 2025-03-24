@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link href="./css/output.css" rel="stylesheet" />
     <link href="./css/styles.css" rel="stylesheet" />
-    <link href="./css/cooperate.css" rel="stylesheet" />
     
     <!-- Swiper -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> 
@@ -86,16 +85,10 @@
             </div>
             <div class="wiper-pagination reasons__pagination"></div>
           </div>
-
-          
-          <!-- <div class="reasons__image-area w-full md:w-[36.4%] mt-5 md:mt-[0]">
-            <img src="./ui/img/cooperate/private-bus/yokohama-fc-01.jpg" alt="横浜FCの選手がバスから降りているところ" class="w-full object-cover">
-          </div> -->
         </div>
 
         <div class="reasons__conten mt-16 md:mt-[73px] flex flex-col md:flex-row gap-x-[130px]">
           <div class="private-bus__text-area w-full md:w-[51.8%]">
-            <!-- <h2 class="private-bus__text-title private-bus__text-title--second text-2xl md:text-[32px] font-medium tracking-[0.1em] capitalize text-[#D61F36] "><span class="text-[#D61F36] text-[40px] md:text-6xl font-normal mr-[16px]">02</span><br class="u-mobile"><span class="private-bus__title-second mt-[10px]">丸大観光は、公益財団法人日本バス協会から貸切バス安全性評価認定を認定されました。</span></h2> -->
             <div class="private-bus__text-title block md:flex md:items-start gap-[16px] md:gap-[0] text-[#D61F36] text-2xl md:text-[32px] font-medium tracking-[0.1em] capitalize">
               <span class="text-[40px] md:text-6xl font-normal leading-none flex-shrink-0 flex items-center">02</span>
               <h2 class="private-bus__title-second leading-normal">丸大観光は、公益財団法人日本バス協会から貸切バス安全性評価認定を認定されました。</h2>
@@ -118,176 +111,142 @@
         <!-- スライド -->
         <div class="vehicle-introduction vehicle-swiper mt-[40px] md:mt-[60px]">
           <div class="swiper js-vehicle-swiper vehicle-swiper__contents">
-            <ul class="swiper-wrapper vehicle-swiper__wrapper">
+            <div class="swiper-wrapper vehicle-swiper__wrapper">
               <!-- スライド1 -->
-              <li class="swiper-slide vehicle-swiper__slide vehicle-slide" data-modal="slide-01">
-                <!-- <a href="https://example.com/report1" class="vehicle-slide__link"> -->
+              <div class="swiper-slide vehicle-swiper__slide vehicle-slide" data-modal="slide-01">
                   <div class="vehicle-slide__link">
                     <figure class="vehicle-slide__image ">
                       <picture>
                         <img src="./ui/img/cooperate/private-bus/lineup_bus01.jpg" alt="大型観光バス" loading="lazy">
                       </picture>
                     </figure>
-                    <!-- <div class="vehicle-slide__body "> -->
-            
                       <h3 class="vehicle-slide__title text-[#2E2829] text-center text-lg md:text-xl font-normal tracking-[0.08em] mt-[20px] md:mt-[10px]">大型観光バス</h3>
-                      <p class="vehicle-slide__text text-[#2E2829] text-base font-normal tracking-[0.08em] mt-2">テキストテキストテキテキストテキストテキストテキストテキストテキストテキストテキストストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                      <p class="vehicle-slide__text text-[#2E2829] text-base font-normal tracking-[0.08em] mt-2">５２人～５７人乗<br>(冷蔵庫、テレビ、DVD、カラオケ付き)
+                        一部の座席を回転させ、テーブルを囲んでくつろげる空間を確保できるサロンカー、トイレが心配な方も安心してイベントを楽しめるトイレ付バスもご用意しています</p>
                       <p class="vehicle-slide__button-wrap flex items-center mt-[18px]">
                         <span class="vehicle-slide__button-text text-base font-normal text-[#D61F36] ">座席表を見る</span>
                         <span class="vehicle-slide__button"></span>
                       </p>
                   </div>
-              </li>
+              </div>
 
               <!-- スライド2 -->
-              <li class="swiper-slide vehicle-swiper__slide vehicle-slide" data-modal="slide-02">
-                <a href="https://example.com/report2" class="vehicle-slide__link">
+              <div class="swiper-slide vehicle-swiper__slide vehicle-slide" data-modal="slide-02">
                   <div class="vehicle-slide__link">
                     <figure class="vehicle-slide__image ">
                       <picture>
                         <img src="./ui/img/cooperate/private-bus/lineup_bus02.jpg" alt="大型送迎バス" loading="lazy">
                       </picture>
                     </figure>
-                    <!-- <div class="vehicle-slide__body "> -->
-                
                       <h3 class="vehicle-slide__title text-center text-[#2E2829] text-xl font-normal tracking-[0.08em] mt-[20px] md:mt-[10px]">大型送迎バス</h3>
-                      <p class="vehicle-slide__text text-[#2E2829] text-base font-normal tracking-[0.08em] mt-2">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                      <p class="vehicle-slide__text text-[#2E2829] text-base font-normal tracking-[0.08em] mt-2">65人乗(立席含む)<br>シンプルな設備で、短距離移動に適した車両です。</p>
                       <p class="vehicle-slide__button-wrap flex items-center mt-[18px]">
                         <span class="vehicle-slide__button-text text-base font-normal text-[#D61F36] ">座席表を見る</span>
                         <span class="vehicle-slide__button"></span>
                       </p>
                     </div>
-                  <!-- </div> -->
-                </a>
-              </li>
+              </div>
 
               <!-- スライド3 -->
-              <li class="swiper-slide vehicle-swiper__slide  vehicle-slide" data-modal="slide-03">
-                <a href="https://example.com/report3" class="vehicle-slide__link">
+              <div class="swiper-slide vehicle-swiper__slide  vehicle-slide" data-modal="slide-03">
                   <div class="vehicle-slide__link">
                     <figure class="vehicle-slide__image ">
                       <picture>
                         <img src="./ui/img/cooperate/private-bus/lineup_bus03.jpg" alt="中型観光バス" loading="lazy">
                       </picture>
                     </figure>
-                    <!-- <div class="vehicle-slide__body "> -->
-              
                       <h3 class="vehicle-slide__title text-center text-[#2E2829] text-xl font-normal tracking-[0.08em] mt-[10px] mt-[20px] md:mt-[10px]">中型観光バス</h3>
-                      <p class="vehicle-slide__text text-[#2E2829] text-base font-normal tracking-[0.08em] mt-2">テキストテキストテストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                      <p class="vehicle-slide__text text-[#2E2829] text-base font-normal tracking-[0.08em] mt-2">27人～39人乗<br>(冷蔵庫、テレビ、DVD、カラオケ付き)
+                        一部の座席を回転させ、テーブルを囲んでくつろげる空間を確保できるサロンカーもご用意しています。</p>
                       <p class="vehicle-slide__button-wrap flex items-center mt-[18px]">
                         <span class="vehicle-slide__button-text text-base font-normal text-[#D61F36] ">座席表を見る</span>
                         <span class="vehicle-slide__button"></span>
                       </p>
-                    <!-- </div> -->
                   </div>
-                </a>
-              </li>
+              </div>
               <!-- スライド4 -->
-              <li class="swiper-slide vehicle-swiper__slide  vehicle-slide" data-modal="slide-04">
-                <a href="https://example.com/report3" class="vehicle-slide__link">
+              <div class="swiper-slide vehicle-swiper__slide  vehicle-slide" data-modal="slide-04">
                   <div class="vehicle-slide__link">
                     <figure class="vehicle-slide__image ">
                       <picture>
                         <img src="./ui/img/cooperate/private-bus/lineup_bus04.jpg" alt="中型送迎バス" loading="lazy">
                       </picture>
                     </figure>
-                    <!-- <div class="vehicle-slide__body "> -->
-                
                       <h3 class="vehicle-slide__title text-center text-[#2E2829] text-xl font-normal tracking-[0.08em] mt-[10px] mt-[20px] md:mt-[10px]">中型送迎バス</h3>
-                      <p class="vehicle-slide__text text-[#2E2829] text-base font-normal tracking-[0.08em] mt-2">テトテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                      <p class="vehicle-slide__text text-[#2E2829] text-base font-normal tracking-[0.08em] mt-2">44人乗<br>シンプルな設備で、短距離移動に適した車両です。</p>
                       <p class="vehicle-slide__button-wrap flex items-center mt-[18px]">
                         <span class="vehicle-slide__button-text text-base font-normal text-[#D61F36] ">座席表を見る</span>
                         <span class="vehicle-slide__button"></span>
                       </p>
-                    <!-- </div> -->
                   </div>
-                </a>
-              </li>
+              </div>
               <!-- スライド5 -->
-              <li class="swiper-slide vehicle-swiper__slide  vehicle-slide" data-modal="slide-05">
-                <a href="https://example.com/report3" class="vehicle-slide__link">
+              <div class="swiper-slide vehicle-swiper__slide  vehicle-slide" data-modal="slide-05">
                   <div class="vehicle-slide__link">
                     <figure class="vehicle-slide__image ">
                       <picture>
                         <img src="./ui/img/cooperate/private-bus/lineup_bus05.jpg" alt="小型観光バス" loading="lazy">
                       </picture>
                     </figure>
-                    <!-- <div class="vehicle-slide__body"> -->
-              
                       <h3 class="vehicle-slide__title text-center text-[#2E2829] text-xl font-normal tracking-[0.08em] mt-[10px] mt-[20px] md:mt-[10px]">小型観光バス</h3>
-                      <p class="vehicle-slide__text text-[#2E2829] text-base font-normal tracking-[0.08em] mt-2">テストテキストテキストテキストテキストテキストテキストテキスト</p>
+                      <p class="vehicle-slide__text text-[#2E2829] text-base font-normal tracking-[0.08em] mt-2">23人～27人乗<br>(冷蔵庫、テレビ、DVD付き)
+                        スキー合宿などに便利な、広い荷物置きスペースを確保した車両もご用意しております。</p>
                       <p class="vehicle-slide__button-wrap flex items-center mt-[18px]">
                         <span class="vehicle-slide__button-text text-base font-normal text-[#D61F36] ">座席表を見る</span>
                         <span class="vehicle-slide__button"></span>
                       </p>
-                    <!-- </div> -->
                   </div>
-                </a>
-              </li>
+              </div>
               <!-- スライド6 -->
-              <li class="swiper-slide vehicle-swiper__slide  vehicle-slide" data-modal="slide-06">
-                <a href="https://example.com/report3" class="vehicle-slide__link">
+              <div class="swiper-slide vehicle-swiper__slide  vehicle-slide" data-modal="slide-06">
                   <div class="vehicle-slide__link">
                     <figure class="vehicle-slide__image ">
                       <picture>
                         <img src="./ui/img/cooperate/private-bus/lineup_bus06.jpg" alt="小型送迎バス" loading="lazy">
                       </picture>
                     </figure>
-                    <!-- <div class="vehicle-slide__body "> -->
-                  
                       <h3 class="vehicle-slide__title text-center text-[#2E2829] text-xl font-normal tracking-[0.08em] mt-[10px] mt-[20px] md:mt-[10px]">小型送迎バス</h3>
-                      <p class="vehicle-slide__text text-[#2E2829] text-base font-normal tracking-[0.08em] mt-2">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                      <p class="vehicle-slide__text text-[#2E2829] text-base font-normal tracking-[0.08em] mt-2">25人乗<br>シンプルな設備で、短距離移動に適した車両です。「白」基調とした車両で、冠婚葬祭にもご利用いただけます。</p>
                       <p class="vehicle-slide__button-wrap flex items-center mt-[18px]">
                         <span class="vehicle-slide__button-text text-base font-normal text-[#D61F36] ">座席表を見る</span>
                         <span class="vehicle-slide__button"></span>
                       </p>
                     </div>
-                  <!-- </div> -->
-                </a>
-              </li>
+                  </div>
               <!-- スライド7 -->
-              <li class="swiper-slide vehicle-swiper__slide vehicle-slide" data-modal="slide-07">
-                <a href="https://example.com/report3" class="vehicle-slide__link">
+              <div class="swiper-slide vehicle-swiper__slide vehicle-slide" data-modal="slide-07">
                   <div class="vehicle-slide__link">
                     <figure class="vehicle-slide__image ">
                       <picture>
                         <img src="./ui/img/cooperate/private-bus/lineup_bus07.jpg" alt="福祉バス大型" loading="lazy">
                       </picture>
                     </figure>
-                    <!-- <div class="vehicle-slide__body "> -->
-                    
                       <h3 class="vehicle-slide__title text-center text-[#2E2829] text-xl font-normal tracking-[0.08em] mt-[20px] md:mt-[10px] ">福祉バス大型</h3>
-                      <p class="vehicle-slide__text text-[#2E2829] text-base font-normal tracking-[0.08em] mt-2">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                      <p class="vehicle-slide__text text-[#2E2829] text-base font-normal tracking-[0.08em] mt-2">車いす最大６台可<br>車いすの方も安心してご乗車いただけるリフト付きバスです。</p>
                       <p class="vehicle-slide__button-wrap flex items-center mt-[18px]">
                         <span class="vehicle-slide__button-text text-base font-normal text-[#D61F36] ">座席表を見る</span>
                         <span class="vehicle-slide__button"></span>
                       </p>
-                    <!-- </div> -->
                   </div>
-                </a>
-              </li>
+                </div>
               <!-- スライド8 -->
-              <li class="swiper-slide vehicle-swiper__slide  vehicle-slide" data-modal="slide-08">
-                <a href="https://example.com/report3" class="vehicle-slide__link">
+              <div class="swiper-slide vehicle-swiper__slide  vehicle-slide" data-modal="slide-08">
                   <div class="vehicle-slide__link">
                     <figure class="vehicle-slide__image ">
                       <picture>
                         <img src="./ui/img/cooperate/private-bus/lineup_bus08.jpg" alt="福祉バス小型" loading="lazy">
                       </picture>
                     </figure>
-                    <!-- <div class="vehicle-slide__body "> -->
-                    
                       <h3 class="vehicle-slide__title text-center text-[#2E2829] text-xl font-normal tracking-[0.08em] mt-[20px] md:mt-[10px]">福祉バス小型</h3>
-                      <p class="vehicle-slide__text text-[#2E2829] text-base font-normal tracking-[0.08em] mt-2">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                      <p class="vehicle-slide__text text-[#2E2829] text-base font-normal tracking-[0.08em] mt-2">車いす最大４台可<br>車いすの方も安心してご乗車いただけるリフト付きバスです。</p>
                       <p class="vehicle-slide__button-wrap flex items-center mt-[18px]">
                         <span class="vehicle-slide__button-text text-base font-normal text-[#D61F36] ">座席表を見る</span>
                         <span class="vehicle-slide__button"></span>
                       </p>
                     <!-- </div> -->
                   </div>
-                </a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
           <div class="vehicle-slide__swiper-navigation mt-[20px] md:mt-[0]">
             <button class="swiper-button-prev vehicle-slide__custom-prev"></button>
@@ -295,23 +254,185 @@
             <button class="swiper-button-next vehicle-slide__custom-next"></button>
         </div>
         </div>
-      <!-- モーダルウィンドウ(大型観光バス) -->
+      <!-- モーダルウィンドウ01(大型観光バス) -->
      <div id="slide-01" class="bus__modal modal">
-      <div id="modalBg" class="modalBg"></div>
+      <div class="modalBg js-modalBg"></div>
         <div class="modalWrapper">
           <div class="modalContents">
-            <p class="modalTitle text-xl font-normal tracking-[0.08em] text-[#2E2829]">大型観光バス 座席表</p>
-            <p class="modalText text-base font-normal tracking-[0.08em] text-[#2E2829]">正座席42席＋補助席10席</p>
+            <p class="modalTitle text-xl font-normal tracking-[0.08em] text-[#2E2829]">大型観光バス座席表</p>
             <div class="modal__img">
-            <img src="./ui/img/cooperate/cooperate-taxi/slide-01-modal-img.jpg" alt="" class="w-full ">
+              <picture>
+                <!-- SP（スマホ）用画像：画面幅が767px以下 -->
+                <source srcset="./ui/img/cooperate/private-bus/slide01-modal-img-sp.jpg" media="(max-width: 767px)">
+                <!-- PC用画像（デフォルト） -->
+                <img src="./ui/img/cooperate/private-bus/slide01-modal-img.jpg" alt="" class="w-full">
+              </picture>
             </div>
+            <p class="modalText text-xs text-center font-normal tracking-[0.08em] text-[#2E2829]">当社ではお客様のご利用目的に合わせて、さまざまなタイプの車両をご用意しております。<br>
+              こちらに掲載しているのは、座席レイアウトの一例です。<br>
+              ご希望に合った車両をご提案いたしますので、お気軽にお問い合わせください。</p>
           </div>
             <!-- 閉じるボタン -->
-             <div id="closeModal" class="closeModal"></div>
+             <div  class="closeModal js-closeModal"></div>
+        </div>
+      </div>
+      <!-- モーダルウィンドウ02(大型送迎バス) -->
+     <div id="slide-02" class="bus__modal modal">
+      <div class="modalBg js-modalBg"></div>
+        <div class="modalWrapper">
+          <div class="modalContents">
+            <p class="modalTitle text-xl font-normal tracking-[0.08em] text-[#2E2829]">大型送迎バス 座席表</p>
+            <div class="modal__img">
+              <picture>
+                <!-- SP（スマホ）用画像：画面幅が767px以下 -->
+                <source srcset="./ui/img/cooperate/private-bus/slide02-modal-img-sp.jpg" media="(max-width: 767px)">
+                <!-- PC用画像（デフォルト） -->
+                <img src="./ui/img/cooperate/private-bus/slide02-modal-img.jpg" alt="" class="w-full ">
+              </picture>
+            </div>
+            <p class="modalText text-xs text-center font-normal tracking-[0.08em] text-[#2E2829]">
+              当社ではお客様のご利用目的に合わせて、さまざまなタイプの車両をご用意しております。<br>
+              こちらに掲載しているのは、座席レイアウトの一例です。<br>
+              ご希望に合った車両をご提案いたしますので、お気軽にお問い合わせください。</p>
+            </div>
+          <!-- 閉じるボタン -->
+          <div class="closeModal js-closeModal"></div>
+        </div>
+      </div>
+      <!-- モーダルウィンドウ03(中型観光バス) -->
+     <div id="slide-03" class="bus__modal modal">
+      <div class="modalBg js-modalBg"></div>
+        <div class="modalWrapper">
+          <div class="modalContents">
+            <p class="modalTitle text-xl font-normal tracking-[0.08em] text-[#2E2829]">中型観光バス座席表</p>
+            <div class="modal__img">
+            <img src="./ui/img/cooperate/private-bus/slide03-modal-img.jpg" alt="" class="w-full ">
+            </div>
+            <p class="modalText text-xs text-center font-normal tracking-[0.08em] text-[#2E2829]">
+              当社ではお客様のご利用目的に合わせて、さまざまなタイプの車両をご用意しております。<br>
+              こちらに掲載しているのは、座席レイアウトの一例です。<br>
+              ご希望に合った車両をご提案いたしますので、お気軽にお問い合わせください。</p>
+            </div>
+          <!-- 閉じるボタン -->
+          <div class="closeModal js-closeModal"></div>
+        </div>
+      </div>
+      <!-- モーダルウィンドウ04(中型送迎バス) -->
+     <div id="slide-04" class="bus__modal modal">
+      <div class="modalBg js-modalBg"></div>
+        <div class="modalWrapper">
+          <div class="modalContents">
+            <p class="modalTitle text-xl font-normal tracking-[0.08em] text-[#2E2829]">中型送迎バス座席表</p>
+            <div class="modal__img">
+              <picture>
+                <!-- SP（スマホ）用画像：画面幅が767px以下 -->
+                <source srcset="./ui/img/cooperate/private-bus/slide04-modal-img-sp.jpg" media="(max-width: 767px)">
+                <!-- PC用画像（デフォルト） -->
+                <img src="./ui/img/cooperate/private-bus/slide04-modal-img.jpg" alt="" class="w-full ">
+              </picture>
+            </div>
+            <p class="modalText text-xs text-center font-normal tracking-[0.08em] text-[#2E2829]">
+              当社ではお客様のご利用目的に合わせて、さまざまなタイプの車両をご用意しております。<br>
+              こちらに掲載しているのは、座席レイアウトの一例です。<br>
+              ご希望に合った車両をご提案いたしますので、お気軽にお問い合わせください。</p>
+            </div>
+          <!-- 閉じるボタン -->
+          <div class="closeModal js-closeModal"></div>
+        </div>
+      </div>
+      <!-- モーダルウィンドウ05(小型観光バス座席表) -->
+     <div id="slide-05" class="bus__modal modal">
+      <div class="modalBg js-modalBg"></div>
+        <div class="modalWrapper">
+          <div class="modalContents">
+            <p class="modalTitle text-xl font-normal tracking-[0.08em] text-[#2E2829]">小型観光バス座席表</p>
+            <div class="modal__img">
+              <picture>
+                <!-- SP（スマホ）用画像：画面幅が767px以下 -->
+                <source srcset="./ui/img/cooperate/private-bus/slide05-modal-img-sp.jpg" media="(max-width: 767px)">
+                <!-- PC用画像（デフォルト） -->
+                <img src="./ui/img/cooperate/private-bus/slide05-modal-img.jpg" alt="" class="w-full ">
+              </picture>
+            </div>
+            <p class="modalText text-xs text-center font-normal tracking-[0.08em] text-[#2E2829]">
+              当社ではお客様のご利用目的に合わせて、さまざまなタイプの車両をご用意しております。<br>
+              こちらに掲載しているのは、座席レイアウトの一例です。<br>
+              ご希望に合った車両をご提案いたしますので、お気軽にお問い合わせください。</p>
+            </div>
+          <!-- 閉じるボタン -->
+          <div class="closeModal js-closeModal"></div>
+        </div>
+      </div>
+      <!-- モーダルウィンドウ06(小型観光バス座席表) -->
+     <div id="slide-06" class="bus__modal modal">
+      <div class="modalBg js-modalBg"></div>
+        <div class="modalWrapper">
+          <div class="modalContents">
+            <p class="modalTitle text-xl font-normal tracking-[0.08em] text-[#2E2829]">小型送迎バス座席表</p>
+            <div class="modal__img">
+              <picture>
+                <!-- SP（スマホ）用画像：画面幅が767px以下 -->
+                <source srcset="./ui/img/cooperate/private-bus/slide06-modal-img-sp.jpg" media="(max-width: 767px)">
+                <!-- PC用画像（デフォルト） -->
+                <img src="./ui/img/cooperate/private-bus/slide06-modal-img.jpg" alt="" class="w-full ">
+              </picture>
+            </div>
+            <p class="modalText text-xs text-center font-normal tracking-[0.08em] text-[#2E2829]">
+              当社ではお客様のご利用目的に合わせて、さまざまなタイプの車両をご用意しております。<br>
+              こちらに掲載しているのは、座席レイアウトの一例です。<br>
+              ご希望に合った車両をご提案いたしますので、お気軽にお問い合わせください。</p>
+            </div>
+          <!-- 閉じるボタン -->
+          <div class="closeModal js-closeModal"></div>
+        </div>
+      </div>
+      <!-- モーダルウィンドウ07(福祉バス大型座席表) -->
+     <div id="slide-07" class="bus__modal modal">
+      <div class="modalBg js-modalBg"></div>
+        <div class="modalWrapper">
+          <div class="modalContents">
+            <p class="modalTitle text-xl font-normal tracking-[0.08em] text-[#2E2829]">福祉バス大型 座席表</p>
+            <div class="modal__img">
+              <picture>
+                <!-- SP（スマホ）用画像：画面幅が767px以下 -->
+                <source srcset="./ui/img/cooperate/private-bus/slide07-modal-img-sp.jpg" media="(max-width: 767px)">
+                <!-- PC用画像（デフォルト） -->
+                <img src="./ui/img/cooperate/private-bus/slide07-modal-img.jpg" alt="" class="w-full ">
+              </picture>
+            </div>
+            <p class="modalText text-xs text-center font-normal tracking-[0.08em] text-[#2E2829]">
+              当社ではお客様のご利用目的に合わせて、さまざまなタイプの車両をご用意しております。<br>
+              こちらに掲載しているのは、座席レイアウトの一例です。<br>
+              ご希望に合った車両をご提案いたしますので、お気軽にお問い合わせください。</p>
+            </div>
+          <!-- 閉じるボタン -->
+          <div class="closeModal js-closeModal"></div>
+        </div>
+      </div>
+      <!-- モーダルウィンドウ08(福祉バス小型座席表) -->
+     <div id="slide-08" class="bus__modal modal">
+      <div class="modalBg js-modalBg"></div>
+        <div class="modalWrapper">
+          <div class="modalContents">
+            <p class="modalTitle text-xl font-normal tracking-[0.08em] text-[#2E2829]">福祉バス小型 座席表</p>
+            <div class="modal__img">
+              <picture>
+                <!-- SP（スマホ）用画像：画面幅が767px以下 -->
+                <source srcset="./ui/img/cooperate/private-bus/slide08-modal-img-sp.jpg" media="(max-width: 767px)">
+                <!-- PC用画像（デフォルト） -->
+                <img src="./ui/img/cooperate/private-bus/slide08-modal-img.jpg" alt="" class="w-full ">
+              </picture>
+            </div>
+            <p class="modalText text-xs text-center font-normal tracking-[0.08em] text-[#2E2829]">
+              当社ではお客様のご利用目的に合わせて、さまざまなタイプの車両をご用意しております。<br>
+              こちらに掲載しているのは、座席レイアウトの一例です。<br>
+              ご希望に合った車両をご提案いたしますので、お気軽にお問い合わせください。</p>
+            </div>
+          <!-- 閉じるボタン -->
+          <div class="closeModal js-closeModal"></div>
         </div>
       </div>
     </div>
-
     <!-- Q and Aセクション -->
       <section class="layout-bus-faq bus-faq py-20 md:py-[98px] bg-[#FFFFFF]">
         <div class="mx-auto md:max-w-[1280px] w-full px-[20px] md:px-[40px]">
@@ -456,10 +577,8 @@
           <a href="#" class="cooperate-contact__arrow-button"></a>
       </div>
     </div>
-
       </div>
       </section>
-
     <!-- footer -->
     <footer class="footer">footer</footer>
   </body>
