@@ -5,7 +5,7 @@
 ページ提出をGithubで行なっていただき、弊社にてローカルでページチェック
 
 ## お願い事項
-- tailwindでのfontーsizeはtext-base等ではなく、text-[1rem] ※ line-heightがデザイン通りに指定できないため
+- tailwindでのfont-sizeはtext-base等を使用せず、text-[1rem]で指定 ※ line-heightがデザイン通りに指定できないため
 - 画像、動画素材はリサイズ
 - 画像素材等が欲しい場合はFigmaのコメントもしくはスラックのメンションにてデザイナーさんにご依頼
 - 各ページのTOP見出しはh1に指定（そのページが何のページなのか一番わかりやすい文言）
