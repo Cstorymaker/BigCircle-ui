@@ -51,6 +51,7 @@
 }
 
 /* MV */
+/* MV */
 .mv {
   background-size: cover;
   background-repeat: no-repeat;
@@ -124,6 +125,7 @@
     width: 90vw;
   }
 }
+
 
 /*staff-listページ*/
 .layout-staff-list {
@@ -3112,8 +3114,6 @@ td {
   }
 }
 
-
-
 .reasons__bullet {
   width: 8px;
   height: 8px;
@@ -3135,6 +3135,7 @@ td {
 
 .private-bus__security-image {
   margin-inline: auto;
+  max-width: 15rem;
 }
 
 .private-bus__image-area img {
@@ -3173,12 +3174,6 @@ td {
   position: relative;
 }
 
-.vehicle-swiper .vehicle-swiper img {
-  width: 100%;
-  aspect-ratio: 400/498;
-  object-fit: cover;
-}
-
 .vehicle-slide {
   cursor: pointer;
   padding: 16px;
@@ -3199,9 +3194,10 @@ td {
 }
 
 .vehicle-slide__image img {
-  aspect-ratio: 280 / 180;
+  aspect-ratio: 320 / 200;
   object-fit: cover;
-  height: 100%;
+  width: 100%;
+  height: auto;
   border-radius: 5px;
 }
 @media screen and (min-width: 768px) {
@@ -3376,6 +3372,119 @@ td {
     aspect-ratio: 420/300;
   }
 }
+
+/* 
+.modal__images {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding-right: 8px;
+} */
+
+.modal__images-title {
+  margin-top: 8px;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.7;
+}
+
+.modal__img--two-column img {
+  object-fit: contain;
+  aspect-ratio: 300/420;
+}
+
+.modal__scroll {
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 8px;
+  margin-top: 16px;
+  display: block;
+}
+/* PCではスクロールさせず横並びに */
+@media screen and (min-width: 768px) {
+  .modal__scroll {
+    max-height: none;
+    overflow: visible;
+    display: block;
+    align-items: flex-start;
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .modal__img-scroll{
+    display: flex;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.modal__img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.modal__img-title {
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+}
+
 
 .closeModal {
   position: absolute;
