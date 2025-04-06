@@ -4,6 +4,15 @@
   font-size:62.5%;
 } */
 
+a[href*="tel:"] {
+  pointer-events: auto;
+}
+@media screen and (min-width: 767px) {
+  a[href*="tel:"] {
+    pointer-events: none;
+  }
+}
+
 /*header*/
 .header {
   height: 71px;
@@ -88,7 +97,7 @@
 }
 @media (min-width: 767px) {
   .mv-title--jp {
-    font-size: clamp(1.375rem, -0.179rem + 3.254vi, 2.75rem)
+    font-size: clamp(1.375rem, -0.179rem + 3.254vi, 2.75rem);
   }
 }
 
@@ -125,7 +134,6 @@
     width: 90vw;
   }
 }
-
 
 /*staff-listページ*/
 .layout-staff-list {
@@ -2176,7 +2184,7 @@ td {
 .cooperate-contact__recruit-contact {
   position: relative;
   transition: background-color 0.3s ease;
-  overflow: hidden; 
+  overflow: hidden;
   border-radius: 5px;
 }
 
@@ -2192,16 +2200,15 @@ td {
   z-index: 0;
 }
 
-.cooperate-contact__bus-contact::before{
-  background-image: url('../ui/img/cooperate/common/contact-hover-img-bus.jpg');
+.cooperate-contact__bus-contact::before {
+  background-image: url("../ui/img/cooperate/common/contact-hover-img-bus.jpg");
   border-radius: 5px;
 }
 
-.cooperate-contact__recruit-contact::before{
-  background-image: url('../ui/img/cooperate/common/contact-hover-img-employee.jpg');
+.cooperate-contact__recruit-contact::before {
+  background-image: url("../ui/img/cooperate/common/contact-hover-img-employee.jpg");
   border-radius: 5px;
 }
-
 
 .cooperate-contact__bus-contact::after,
 .cooperate-contact__recruit-contact::after {
@@ -2221,10 +2228,9 @@ td {
   opacity: 1;
 }
 
-
 .cooperate-contact__bus-contact:hover .section-heading__contact-jp,
 .cooperate-contact__recruit-contact:hover .section-heading__contact-jp,
-.cooperate-contact__bus-contact:hover .section-heading__en-top ,
+.cooperate-contact__bus-contact:hover .section-heading__en-top,
 .cooperate-contact__recruit-contact:hover .section-heading__en-top,
 .cooperate-contact__recruit-contact:hover .cooperate-contact__arrow-button,
 .cooperate-contact__bus-contact:hover::before,
@@ -2237,7 +2243,7 @@ td {
 .cooperate-contact__recruit-contact > * {
   position: relative;
   z-index: 5;
-} 
+}
 
 .cooperate-contact__bus-contact:hover .cooperate-contact__arrow-button,
 .cooperate-contact__recruit-contact:hover .cooperate-contact__arrow-button {
@@ -2245,12 +2251,14 @@ td {
 }
 
 .cooperate-contact__bus-contact:hover .cooperate-contact__arrow-button::before,
-.cooperate-contact__recruit-contact:hover .cooperate-contact__arrow-button::before {
+.cooperate-contact__recruit-contact:hover
+  .cooperate-contact__arrow-button::before {
   background-color: #ffffff;
 }
 
 .cooperate-contact__bus-contact:hover .cooperate-contact__arrow-button::after,
-.cooperate-contact__recruit-contact:hover .cooperate-contact__arrow-button::after {
+.cooperate-contact__recruit-contact:hover
+  .cooperate-contact__arrow-button::after {
   background-color: #ffffff;
 }
 
@@ -2664,7 +2672,7 @@ td {
 .price-list__data {
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1.7;
-  padding: 16.5px 18px;
+  padding: 16.5px 14.5px;
   width: 33.333%;
   border: 1px solid #959595;
 }
@@ -2723,7 +2731,6 @@ td {
   border: 3px solid #d61f36;
 }
 
-/**/
 .partner-section__title {
   font-family: "Shippori Mincho", serif;
   line-height: 1.5;
@@ -2976,10 +2983,9 @@ td {
   line-height: 1.5;
 }
 
-
 @media screen and (min-width: 768px) {
-  .private-bus__title-second{
-    text-indent:-3px;
+  .private-bus__title-second {
+    text-indent: -3px;
   }
 }
 
@@ -2994,9 +3000,8 @@ td {
   padding-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
-  .private-bus__announced-text{
+  .private-bus__announced-text {
     padding-bottom: 14px;
-
   }
 }
 
@@ -3016,7 +3021,6 @@ td {
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1.7;
 }
-
 
 /*横浜FCクラブバス運行のスライド*/
 .reasons__image-area {
@@ -3053,22 +3057,14 @@ td {
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .private-bus__text-area,
-  .section-heading  {
+  .section-heading {
     max-width: 650px;
     width: 100%;
     margin-inline: auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .reasons__image-area{
-    max-width: 650px;
-    width: 100%;
-    margin-inline: auto;
-    margin-top: 24px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .reasons__image-area{
+  .reasons__image-area {
     max-width: 650px;
     width: 100%;
     margin-inline: auto;
@@ -3076,15 +3072,23 @@ td {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .private-bus__security-image{
-    max-width:400px;
+  .reasons__image-area {
+    max-width: 650px;
     width: 100%;
     margin-inline: auto;
     margin-top: 24px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .private-bus__text{
+  .private-bus__security-image {
+    max-width: 400px;
+    width: 100%;
+    margin-inline: auto;
+    margin-top: 24px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .private-bus__text {
     margin-top: 24px;
   }
 }
@@ -3097,19 +3101,18 @@ td {
   margin-top: 10px;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .reasons__pagination{
+  .reasons__pagination {
     margin-top: 10px;
   }
 }
-@media screen and (min-width: 1025px)  {
-  .reasons__pagination{
+@media screen and (min-width: 1025px) {
+  .reasons__pagination {
     margin-top: 0;
   }
 }
 
-
-@media screen and (min-width: 768px) and (max-width: 1024px)  {
-  .reasons__conten{
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .reasons__conten {
     flex-direction: column;
   }
 }
@@ -3118,15 +3121,14 @@ td {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #D2C7C7; 
+  background-color: #d2c7c7;
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
 
 .reasons__bullet--active {
-  background-color: #D61F36; 
+  background-color: #d61f36;
 }
-
 
 .section-heading__sm-title {
   font-family: "Noto Sans JP", sans-serif;
@@ -3135,7 +3137,7 @@ td {
 
 .private-bus__security-image {
   margin-inline: auto;
-  max-width: 15rem;
+  max-width: 240px;
 }
 
 .private-bus__image-area img {
@@ -3292,7 +3294,7 @@ td {
 }
 
 .vehicle-slide__swiper-line {
-  flex-grow: 1; 
+  flex-grow: 1;
   height: 1px;
   background-color: #524c4c;
 }
@@ -3412,65 +3414,11 @@ td {
   }
 }
 
-@media screen and (min-width: 768px){
-  .modal__img-scroll{
+@media screen and (min-width: 768px) {
+  .modal__img-scroll {
     display: flex;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .modal__img {
   width: 100%;
@@ -3484,7 +3432,6 @@ td {
   font-size: 14px;
   color: #333;
 }
-
 
 .closeModal {
   position: absolute;

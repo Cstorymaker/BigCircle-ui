@@ -92,16 +92,20 @@ $(".vehicle-slide").on("click", function () {
     .fadeIn(300)
     .addClass("active");
   $("body").addClass("no-scroll");
+  service_swiper.autoplay.stop();
 });
 
 // モーダルを閉じる（✖ボタン or モーダルの背景）
-$(".closeModal, .modalBg").on("click", function (e) {
-  if ($(e.target).is(".closeModal, .modalBg")) {
+$(".js-closeModal,.js-modalBg").on("click", function (e) {
+  if ($(e.target).is(".js-closeModal, .js-modalBg")) {
     // クリックした要素が✖ボタン or 背景なら閉じる
     $(this).closest(".bus__modal").fadeOut(300).removeClass("active");
     $("body").removeClass("no-scroll");
+     // Swiper再スタート！
+     service_swiper.autoplay.start();
   }
 });
+
 
 const swiper = new Swiper(".js-partner-swiper", {
   loop: true,
@@ -110,7 +114,7 @@ const swiper = new Swiper(".js-partner-swiper", {
     delay: 1500,
   },
   centeredSlides: false,
-  slidesPerView: 1.2,
+  slidesPerView: 'auto',
   spaceBetween: 20,
 
   breakpoints: {
@@ -121,9 +125,9 @@ const swiper = new Swiper(".js-partner-swiper", {
     },
 
     1200: {
-      slidesPerView: 4.25,
+      slidesPerView:'auto',
       spaceBetween: 10,
-      centeredSlides: true,
+      centeredSlides: false,
     },
   },
 
