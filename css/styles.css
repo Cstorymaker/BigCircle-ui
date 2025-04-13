@@ -1457,7 +1457,7 @@ td {
 コーポレートのMV共通
 **********************/
 
-.cooperate-mv {
+.corporate-mv {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 46.875% 53.125%;
@@ -1466,7 +1466,7 @@ td {
   margin-top: 71px;
 }
 @media screen and (min-width: 767px) {
-  .cooperate-mv {
+  .corporate-mv {
     grid-template-columns: 62.5% 37.5%;
     grid-template-rows: 1fr; /* PC時は高さを均等に */
     height: 300px;
@@ -1474,12 +1474,12 @@ td {
   }
 }
 
-.cooperate-title__en {
+.corporate-title__en {
   font-family: "Instrument Serif", serif;
   line-height: 1.2;
 }
 
-.cooperate-title__jp {
+.corporate-title__jp {
   font-family: "Shippori Mincho", serif;
   line-height: 1.2;
 }
@@ -1639,7 +1639,7 @@ td {
   .layout-efforts::after {
     position: absolute;
     content: "";
-    background: url(../ui/img/cooperate/school-bus/school-bus-bus-img01.jpg)
+    background: url(../ui/img/corporate/school-bus/school-bus-bus-img01.jpg)
       no-repeat;
     background-size: contain;
     background-position: center left;
@@ -1657,7 +1657,7 @@ td {
   .layout-efforts::after {
     position: absolute;
     content: "";
-    background: url(../ui/img/cooperate/school-bus/school-bus-bus-img01.jpg)
+    background: url(../ui/img/corporate/school-bus/school-bus-bus-img01.jpg)
       no-repeat;
     background-size: contain;
     background-position: center left;
@@ -1674,114 +1674,114 @@ td {
 /*********************************
 会社概要ページ（コーポレートページ）
 ********************************/
-.cooperate-title__en {
+.corporate-title__en {
   font-family: "Instrument Serif", serif;
   line-height: 1.2;
 }
 
-.cooperate-title__jp {
+.corporate-title__jp {
   font-family: "Shippori Mincho", serif;
   line-height: 1.2;
 }
 
-.cooperate-fv__wrap {
+.corporate-fv__wrap {
   min-height: 300px;
-  /* background-image: url(../ui/img/cooperate/cooperate-company/cooperate-company-mv-sp.jpg); */
+  /* background-image: url(../ui/img/corporate/corporate-company/corporate-company-mv-sp.jpg); */
   background-size: cover;
   background-position: center;
   margin-top: 71px;
 }
 
 @media screen and (min-width: 767px) {
-  .cooperate-fv__wrap {
+  .corporate-fv__wrap {
     min-height: 380px;
-    /* background-image: url(../ui/img/cooperate/cooperate-company/cooperate-company-mv-pc.jpg); */
+    /* background-image: url(../ui/img/corporate/corporate-company/corporate-company-mv-pc.jpg); */
     margin-top: 97px;
   }
 }
 
-.cooperate-fv__wrap--reason {
-  background-image: url(../ui/img/cooperate/private-bus/private-bus-mv-sp.png);
+.corporate-fv__wrap--reason {
+  background-image: url(../ui/img/corporate/private-bus/private-bus-mv-sp.png);
 }
 @media screen and (min-width: 767px) {
-  .cooperate-fv__wrap--reason {
+  .corporate-fv__wrap--reason {
     min-height: 380px;
-    background-image: url(../ui/img/cooperate/private-bus/private-bus-mv-pc.jpg);
+    background-image: url(../ui/img/corporate/private-bus/private-bus-mv-pc.jpg);
     margin-top: 97px;
   }
 }
 
-.cooperate-fv__wrap--taxi {
-  background-image: url(../ui/img/cooperate/cooperate-taxi/cooperate-taxi-mv-sp.jpg);
+.corporate-fv__wrap--taxi {
+  background-image: url(../ui/img/corporate/corporate-taxi/corporate-taxi-mv-sp.jpg);
 }
 @media screen and (min-width: 767px) {
-  .cooperate-fv__wrap--taxi {
+  .corporate-fv__wrap--taxi {
     min-height: 389px;
-    background-image: url(../ui/img/cooperate/cooperate-taxi/cooperate-taxi-mv-pc.jpg);
+    background-image: url(../ui/img/corporate/corporate-taxi/corporate-taxi-mv-pc.jpg);
     margin-top: 87px;
   }
 }
 
-.cooperate-fv__wrap--company {
-  background-image: url(../ui/img/cooperate/cooperate-company/cooperate-company-mv-sp.jpg);
+.corporate-fv__wrap--company {
+  background-image: url(../ui/img/corporate/corporate-company/corporate-company-mv-sp.jpg);
 }
 @media screen and (min-width: 767px) {
-  .cooperate-fv__wrap--company {
+  .corporate-fv__wrap--company {
     min-height: 380px;
-    background-image: url(../ui/img/cooperate/cooperate-company/cooperate-company-mv-pc.jpg);
+    background-image: url(../ui/img/corporate/corporate-company/corporate-company-mv-pc.jpg);
     margin-top: 97px;
   }
 }
 
-.cooperate-fv__wrap--school-bus {
-  background-image: url(../ui/img/cooperate/school-bus/school-bus-mv-sp.png);
+.corporate-fv__wrap--school-bus {
+  background-image: url(../ui/img/corporate/school-bus/school-bus-mv-sp.png);
 }
 @media screen and (min-width: 767px) {
-  .cooperate-fv__wrap--school-bus {
+  .corporate-fv__wrap--school-bus {
     min-height: 380px;
-    background-image: url(../ui/img/cooperate/school-bus/school-bus-mv-pc.jpg);
+    background-image: url(../ui/img/corporate/school-bus/school-bus-mv-pc.jpg);
     margin-top: 97px;
   }
 }
 
-.cooperate-company__sub-title {
+.corporate-company__sub-title {
   font-family: "Shippori Mincho", serif;
   line-height: 1.7;
 }
 
-.cooperate-company__sub-text {
+.corporate-company__sub-text {
   font-family: "Noto Sans JP", sans-serif;
   line-height: 2.4;
 }
 
-.cooperate-company__message-wrap {
+.corporate-company__message-wrap {
   border-top-right-radius: 2000px 422px;
   border-top-left-radius: 2000px 422px;
   margin-left: -200px;
   margin-right: -200px;
 }
 
-.cooperate-company__message-wrap--taxi {
+.corporate-company__message-wrap--taxi {
   margin-left: -112px;
   margin-right: -112px;
 }
 
 /*Historyセクション*/
-.cooperate-history__top-text {
+.corporate-history__top-text {
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1.7;
 }
 
-.cooperate-history__image img {
+.corporate-history__image img {
   aspect-ratio: 335/245.22;
 }
 @media screen and (min-width: 767px) {
-  .cooperate-history__image img {
+  .corporate-history__image img {
     aspect-ratio: 400/292.8;
   }
 }
 
-.cooperate-history__image-figcaption {
+.corporate-history__image-figcaption {
   font-family: "Noto Sans JP", sans-serif;
   line-height: 1.5;
 }
@@ -2123,7 +2123,7 @@ td {
 }
 
 /* 矢印ボタン */
-.cooperate-contact__arrow-button {
+.corporate-contact__arrow-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2136,7 +2136,7 @@ td {
   margin-top: 19px;
 }
 @media (min-width: 768px) {
-  .cooperate-contact__arrow-button {
+  .corporate-contact__arrow-button {
     width: 60px;
     height: 60px;
     margin-top: 17px;
@@ -2144,7 +2144,7 @@ td {
 }
 
 /* 横線 */
-.cooperate-contact__arrow-button::before {
+.corporate-contact__arrow-button::before {
   content: "";
   position: absolute;
   width: 15px;
@@ -2155,14 +2155,14 @@ td {
   transform: translateY(-50%);
 }
 @media (min-width: 768px) {
-  .cooperate-contact__arrow-button::before {
+  .corporate-contact__arrow-button::before {
     width: 20px;
     right: 18px;
   }
 }
 
 /* 斜め線 */
-.cooperate-contact__arrow-button::after {
+.corporate-contact__arrow-button::after {
   content: "";
   position: absolute;
   height: 1px;
@@ -2174,22 +2174,22 @@ td {
   transform-origin: right center;
 }
 @media (min-width: 768px) {
-  .cooperate-contact__arrow-button::after {
+  .corporate-contact__arrow-button::after {
     width: 12px;
     right: 18px;
   }
 }
 
-.cooperate-contact__bus-contact,
-.cooperate-contact__recruit-contact {
+.corporate-contact__bus-contact,
+.corporate-contact__recruit-contact {
   position: relative;
   transition: background-color 0.3s ease;
   overflow: hidden;
   border-radius: 5px;
 }
 
-.cooperate-contact__bus-contact::before,
-.cooperate-contact__recruit-contact::before {
+.corporate-contact__bus-contact::before,
+.corporate-contact__recruit-contact::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -2200,18 +2200,18 @@ td {
   z-index: 0;
 }
 
-.cooperate-contact__bus-contact::before {
-  background-image: url("../ui/img/cooperate/common/contact-hover-img-bus.jpg");
+.corporate-contact__bus-contact::before {
+  background-image: url("../ui/img/corporate/common/contact-hover-img-bus.jpg");
   border-radius: 5px;
 }
 
-.cooperate-contact__recruit-contact::before {
-  background-image: url("../ui/img/cooperate/common/contact-hover-img-employee.jpg");
+.corporate-contact__recruit-contact::before {
+  background-image: url("../ui/img/corporate/common/contact-hover-img-employee.jpg");
   border-radius: 5px;
 }
 
-.cooperate-contact__bus-contact::after,
-.cooperate-contact__recruit-contact::after {
+.corporate-contact__bus-contact::after,
+.corporate-contact__recruit-contact::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -2221,44 +2221,44 @@ td {
   z-index: 1;
 }
 
-.cooperate-contact__bus-contact:hover::before,
-.cooperate-contact__recruit-contact:hover::before,
-.cooperate-contact__bus-contact:hover::after,
-.cooperate-contact__recruit-contact:hover::after {
+.corporate-contact__bus-contact:hover::before,
+.corporate-contact__recruit-contact:hover::before,
+.corporate-contact__bus-contact:hover::after,
+.corporate-contact__recruit-contact:hover::after {
   opacity: 1;
 }
 
-.cooperate-contact__bus-contact:hover .section-heading__contact-jp,
-.cooperate-contact__recruit-contact:hover .section-heading__contact-jp,
-.cooperate-contact__bus-contact:hover .section-heading__en-top,
-.cooperate-contact__recruit-contact:hover .section-heading__en-top,
-.cooperate-contact__recruit-contact:hover .cooperate-contact__arrow-button,
-.cooperate-contact__bus-contact:hover::before,
-.cooperate-contact__recruit-contact:hover::before {
+.corporate-contact__bus-contact:hover .section-heading__contact-jp,
+.corporate-contact__recruit-contact:hover .section-heading__contact-jp,
+.corporate-contact__bus-contact:hover .section-heading__en-top,
+.corporate-contact__recruit-contact:hover .section-heading__en-top,
+.corporate-contact__recruit-contact:hover .corporate-contact__arrow-button,
+.corporate-contact__bus-contact:hover::before,
+.corporate-contact__recruit-contact:hover::before {
   color: white;
   border-color: white;
 }
 
-.cooperate-contact__bus-contact > *,
-.cooperate-contact__recruit-contact > * {
+.corporate-contact__bus-contact > *,
+.corporate-contact__recruit-contact > * {
   position: relative;
   z-index: 5;
 }
 
-.cooperate-contact__bus-contact:hover .cooperate-contact__arrow-button,
-.cooperate-contact__recruit-contact:hover .cooperate-contact__arrow-button {
+.corporate-contact__bus-contact:hover .corporate-contact__arrow-button,
+.corporate-contact__recruit-contact:hover .corporate-contact__arrow-button {
   border-color: #ffffff;
 }
 
-.cooperate-contact__bus-contact:hover .cooperate-contact__arrow-button::before,
-.cooperate-contact__recruit-contact:hover
-  .cooperate-contact__arrow-button::before {
+.corporate-contact__bus-contact:hover .corporate-contact__arrow-button::before,
+.corporate-contact__recruit-contact:hover
+  .corporate-contact__arrow-button::before {
   background-color: #ffffff;
 }
 
-.cooperate-contact__bus-contact:hover .cooperate-contact__arrow-button::after,
-.cooperate-contact__recruit-contact:hover
-  .cooperate-contact__arrow-button::after {
+.corporate-contact__bus-contact:hover .corporate-contact__arrow-button::after,
+.corporate-contact__recruit-contact:hover
+  .corporate-contact__arrow-button::after {
   background-color: #ffffff;
 }
 
@@ -2345,7 +2345,7 @@ td {
   }
 }
 
-.cooperate-taxi__wrapper {
+.corporate-taxi__wrapper {
   padding-top: 200px;
   background: yellow;
   margin-top: -97px;
@@ -2824,12 +2824,12 @@ td {
 
 /* 左ボタン */
 .partner-slider__custom-prev {
-  background-image: url("../ui/img/cooperate/common/arrow-before.png");
+  background-image: url("../ui/img/corporate/common/arrow-before.png");
 }
 
 /* 右ボタン */
 .partner-slider__custom-next {
-  background-image: url("../ui/img/cooperate/common/arrow-next.png");
+  background-image: url("../ui/img/corporate/common/arrow-next.png");
 }
 
 .partner-slider__swiper-line {
@@ -2855,11 +2855,11 @@ td {
   padding-bottom: 4px;
 }
 
-.cooperate-taxi__taxi-reservation img {
+.corporate-taxi__taxi-reservation img {
   aspect-ratio: 335/180;
 }
 @media screen and (min-width: 768px) {
-  .cooperate-taxi__taxi-reservation img {
+  .corporate-taxi__taxi-reservation img {
     aspect-ratio: 445/300;
   }
 }
@@ -3285,12 +3285,12 @@ td {
 
 /* 左ボタン */
 .vehicle-slide__custom-prev {
-  background-image: url("../ui/img/cooperate/common/arrow-before.png");
+  background-image: url("../ui/img/corporate/common/arrow-before.png");
 }
 
 /* 右ボタン */
 .vehicle-slide__custom-next {
-  background-image: url("../ui/img/cooperate/common/arrow-next.png");
+  background-image: url("../ui/img/corporate/common/arrow-next.png");
 }
 
 .vehicle-slide__swiper-line {
